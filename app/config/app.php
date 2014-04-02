@@ -4,6 +4,18 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| Application Default Theme
+	|--------------------------------------------------------------------------
+	|
+	|
+	|
+	*/
+
+	'theme' => 'default',
+
+
+	/*
+	|--------------------------------------------------------------------------
 	| Application Debug Mode
 	|--------------------------------------------------------------------------
 	|
@@ -65,7 +77,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'bd3okmHLmr3CyOQlOgXXmHYWr8vljXnc',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -106,6 +118,14 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+
+		'Barryvdh\Debugbar\ServiceProvider',                            # https://github.com/barryvdh/laravel-debugbar
+		'Liebig\Cron\CronServiceProvider',                              # https://github.com/liebig/cron
+
+		'Teepluss\Theme\ThemeServiceProvider',                          # https://github.com/teepluss/laravel4-theme
+		'Creolab\LaravelModules\ServiceProvider',                       # https://github.com/creolab/laravel-modules
+		'Former\FormerServiceProvider',                                 # https://github.com/Anahkiasen/former
+		'Toddish\Verify\VerifyServiceProvider',                         # https://github.com/Toddish/Verify-L4
 
 	),
 
@@ -172,6 +192,13 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+
+		'Debugbar'        => 'Barryvdh\Debugbar\Facade',
+		'Menu'            => 'Menu\Menu',
+		'Former'          => 'Former\Facades\Former',
+		'Theme'           => 'Teepluss\Theme\Facades\Theme',
+		'Markdown'        => 'MaxHoffmann\Parsedown\ParsedownFacade',
+
 
 	),
 
