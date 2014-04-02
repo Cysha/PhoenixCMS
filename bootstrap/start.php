@@ -24,11 +24,9 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-
-	'local' => array('your-machine-name'),
-
-));
+$env = $app->detectEnvironment(function(){
+    return (getenv('LARAVEL_ENV') ?: 'local');
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -58,6 +56,21 @@ $framework = $app['path.base'].
                  '/vendor/laravel/framework/src';
 
 require $framework.'/Illuminate/Foundation/start.php';
+
+/*
+|--------------------------------------------------------------------------
+| Better Exception Handler
+|--------------------------------------------------------------------------
+|
+| Load user exception handlers here so we catch any that
+| occur during early application startup.
+|   ~ Iccle
+|
+*/
+$exceptions = realpath(app_path().'/start/exceptions.php');
+if( is_file($exceptions) ){
+    require $exceptions;
+}
 
 /*
 |--------------------------------------------------------------------------
