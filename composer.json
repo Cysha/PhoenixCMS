@@ -5,16 +5,18 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework"					: "4.1.*",
+
         "barryvdh/laravel-debugbar"         : "dev-master",
         "liebig/cron"                       : "dev-master",
-
         "teepluss/theme"                    : "dev-master",
         "creolab/laravel-modules"           : "dev-master",
         "toddish/verify"                    : "2.*",
         "anahkiasen/former"                 : "dev-develop",
         "vespakoen/menu"                    : "~2.0",
+        "maxhoffmann/parsedown-laravel"     : "dev-master",
 
-        "maxhoffmann/parsedown-laravel"     : "dev-master"
+		"cysha/pxcms-installer-modules"		: "dev-master",
+        "cysha/pxcms-core"					: "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master"

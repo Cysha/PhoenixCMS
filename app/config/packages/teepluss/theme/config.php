@@ -108,7 +108,7 @@ return array(
 		'layout'  => 'layouts',
 		'asset'   => 'assets',
 		'widget'  => 'widgets',
-		'view'    => 'views'
+		'view'    => 'views',
 		'partial' => 'views/partials',
 	),
 
