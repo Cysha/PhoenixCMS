@@ -15,7 +15,7 @@
         "vespakoen/menu"                    : "~2.0",
         "maxhoffmann/parsedown-laravel"     : "dev-master",
 
-		"cysha/pxcms-installer-modules"		: "dev-master",
+        "composer/installers"               : "dev-master",
         "cysha/pxcms-core"					: "dev-master"
 	},
 	"require-dev":{
@@ -33,6 +33,9 @@
 			"app/tests/TestCase.php"
 		]
 	},
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/cysha/installers" }
+    ],
 	"scripts": {
 		"post-install-cmd": [
 			"php artisan clear-compiled",
