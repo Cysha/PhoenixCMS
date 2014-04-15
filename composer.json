@@ -7,15 +7,11 @@
 		"laravel/framework"					: "4.1.*",
 
         "barryvdh/laravel-debugbar"         : "dev-master",
-        "liebig/cron"                       : "dev-master",
         "teepluss/theme"                    : "dev-master",
         "creolab/laravel-modules"           : "dev-master",
         "toddish/verify"                    : "2.*",
-        "anahkiasen/former"                 : "dev-develop",
-        "vespakoen/menu"                    : "~2.0",
-        "maxhoffmann/parsedown-laravel"     : "dev-master",
 
-		"cysha/pxcms-installer-modules"		: "dev-master",
+        "composer/installers"               : "dev-master",
         "cysha/pxcms-core"					: "dev-master"
 	},
 	"require-dev":{
@@ -23,14 +19,19 @@
 	},
 	"autoload": {
 		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
+			"app/helpers",
+            "app/commands",
+            "app/controllers",
+            "app/models",
+            "app/database/migrations",
+            "app/database/seeds",
+            "app/modules",
 			"app/tests/TestCase.php"
 		]
 	},
+    "repositories": [
+        { "type": "vcs", "url": "https://github.com/cysha/installers" }
+    ],
 	"scripts": {
 		"post-install-cmd": [
 			"php artisan clear-compiled",
