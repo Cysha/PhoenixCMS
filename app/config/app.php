@@ -13,7 +13,6 @@ return array(
 
     'theme' => 'default',
 
-
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -123,6 +122,7 @@ return array(
         //'Liebig\Cron\CronServiceProvider',                              # https://github.com/liebig/cron
 
         'Teepluss\Theme\ThemeServiceProvider',                          # https://github.com/teepluss/laravel4-theme
+        'Teepluss\Api\ApiServiceProvider',                              # https://github.com/teepluss/laravel4-api
         'Creolab\LaravelModules\ServiceProvider',                       # https://github.com/creolab/laravel-modules
         //'Former\FormerServiceProvider',                                 # https://github.com/Anahkiasen/former
         'Toddish\Verify\VerifyServiceProvider',                         # https://github.com/Toddish/Verify-L4
@@ -197,8 +197,8 @@ return array(
         'Menu'            => 'Menu\Menu',
         'Former'          => 'Former\Facades\Former',
         'Theme'           => 'Teepluss\Theme\Facades\Theme',
+        'API'             => 'Teepluss\Api\Facades\API',
         'Markdown'        => 'MaxHoffmann\Parsedown\ParsedownFacade',
-
 
     ),
 
