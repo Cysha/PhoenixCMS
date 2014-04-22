@@ -8,6 +8,39 @@
 * MySQL 4+ (no support for other DBMS at this time)
 * Apache Rewrite Module *`Enabled`*
 
+## Installation
+
+*1.*
+Clone this project into a directory
+```bash
+$ git clone https://github.com/Cysha/Phoenix-CMS.git pxcms
+```
+
+*2.*
+Run a composer install from the root of the project:
+```bash
+$ composer.phar install
+```
+Providing composer didn't throw any errors, that should be all the dependancies installed.
+
+*3.*
+(optional) Next thing to do is configure the environment,
+
+* find your apache vhost that you wish to use,
+* ensure the directory root is path/to/project/**public**
+* and that ```SetEnv LARAVEL_ENV production``` is set in the vhost.
+
+If you do not set that variable, it will default to local.
+
+*4.*
+Last thing is to duplicate the base config folder, and call it the same thing you set the LARAVEL_ENV to.
+Run the following from the root of the project
+```bash
+$ cp app/config/base/ app/config/production
+$ vim app/config/production/database.php
+```
+and populate the array with your database details
+
 ## Dependencies (included in this project)
 
 ### CSS
