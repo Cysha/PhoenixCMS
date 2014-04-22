@@ -6,12 +6,7 @@
 	"require": {
 		"laravel/framework"					: "4.1.*",
 
-        "barryvdh/laravel-debugbar"         : "dev-master",
-        "stolz/assets"                      : "dev-master",
         "creolab/laravel-modules"           : "dev-master",
-        "teepluss/theme"                    : "dev-master",
-        "dingo/api"                         : "dev-master",
-
         "composer/installers"               : "dev-master",
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master"
