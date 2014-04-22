@@ -33,13 +33,19 @@ Providing composer didn't throw any errors, that should be all the dependancies 
 If you do not set that variable, it will default to local.
 
 *4.*
-Last thing is to duplicate the base config folder, and call it the same thing you set the LARAVEL_ENV to.
+Then duplicate the base config folder, and call it the same thing you set the LARAVEL_ENV to.
 Run the following from the root of the project
 ```bash
 $ cp app/config/base/ app/config/production
 $ vim app/config/production/database.php
 ```
 and populate the array with your database details
+
+*5.*
+Last thing to do then is run the installer from the root of the project, and follow the prompts
+```bash
+$ php artisan cms:install
+```
 
 ## Dependencies (included in this project)
 
