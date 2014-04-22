@@ -13,7 +13,7 @@
 *1.*
 Clone this project into a directory
 ```bash
-$ git clone https://github.com/Cysha/Phoenix-CMS.git pxcms
+$ git clone https://github.com/Cysha/PhoenixCMS.git pxcms
 ```
 
 *2.*
