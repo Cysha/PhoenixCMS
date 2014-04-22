@@ -7,13 +7,14 @@
 		"laravel/framework"					: "4.1.*",
 
         "barryvdh/laravel-debugbar"         : "dev-master",
+        "stolz/assets"                      : "dev-master",
         "creolab/laravel-modules"           : "dev-master",
         "teepluss/theme"                    : "dev-master",
-        "teepluss/api"                      : "dev-master",
+        "dingo/api"                         : "dev-master",
 
         "composer/installers"               : "dev-master",
         "cysha/pxcms-core"                  : "dev-master",
-        "cysha/pxcms-auth"					: "dev-master"
+        "cysha/pxcms-auth"                  : "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master"
@@ -31,7 +32,8 @@
 		]
 	},
     "repositories": [
-        { "type": "vcs", "url": "https://github.com/cysha/installers" }
+        { "type": "vcs", "url": "https://github.com/cysha/installers" },
+        { "type": "vcs", "url": "https://github.com/xLink/pxcms-auth" }
     ],
 	"scripts": {
 		"post-install-cmd": [

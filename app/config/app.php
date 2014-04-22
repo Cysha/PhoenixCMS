@@ -118,15 +118,7 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
-        'Barryvdh\Debugbar\ServiceProvider',                            # https://github.com/barryvdh/laravel-debugbar
-        //'Liebig\Cron\CronServiceProvider',                              # https://github.com/liebig/cron
-
-        'Teepluss\Theme\ThemeServiceProvider',                          # https://github.com/teepluss/laravel4-theme
-        'Teepluss\Api\ApiServiceProvider',                              # https://github.com/teepluss/laravel4-api
-        'Creolab\LaravelModules\ServiceProvider',                       # https://github.com/creolab/laravel-modules
-        //'Former\FormerServiceProvider',                                 # https://github.com/Anahkiasen/former
-        'Toddish\Verify\VerifyServiceProvider',                         # https://github.com/Toddish/Verify-L4
-
+        'Creolab\LaravelModules\ServiceProvider',       # https://github.com/creolab/laravel-modules
     ),
 
     /*
@@ -192,13 +184,6 @@ return array(
         'URL'             => 'Illuminate\Support\Facades\URL',
         'Validator'       => 'Illuminate\Support\Facades\Validator',
         'View'            => 'Illuminate\Support\Facades\View',
-
-        'Debugbar'        => 'Barryvdh\Debugbar\Facade',
-        'Menu'            => 'Menu\Menu',
-        'Former'          => 'Former\Facades\Former',
-        'Theme'           => 'Teepluss\Theme\Facades\Theme',
-        'API'             => 'Teepluss\Api\Facades\API',
-        'Markdown'        => 'MaxHoffmann\Parsedown\ParsedownFacade',
 
     ),
 
