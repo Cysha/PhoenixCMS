@@ -7,6 +7,8 @@
 		"laravel/framework"					: "4.1.*",
 
         "creolab/laravel-modules"           : "dev-master",
+        "barryvdh/laravel-debugbar"         : "dev-master",
+
         "composer/installers"               : "dev-master",
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master"
