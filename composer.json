@@ -29,8 +29,7 @@
 		]
 	},
     "repositories": [
-        { "type": "vcs", "url": "https://github.com/cysha/installers" },
-        { "type": "vcs", "url": "https://github.com/xLink/pxcms-auth" }
+        { "type": "vcs", "url": "https://github.com/cysha/installers" }
     ],
 	"scripts": {
 		"post-install-cmd": [
