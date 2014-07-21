@@ -10,7 +10,7 @@
   'default_form_type' => 'horizontal',
 
   // The framework to be used by Former
-  'framework'         => 'TwitterBootstrap',
+  'framework'         => 'TwitterBootstrap3',
 
   // Validation
   ////////////////////////////////////////////////////////////////////
@@ -30,10 +30,10 @@
 
   // Whether checkboxes should always be present in the POST data,
   // no matter if you checked them or not
-  'push_checkboxes'   => false,
+  'push_checkboxes'   => true,
 
   // The value a checkbox will have in the POST array if unchecked
-  'unchecked_value'   => 0,
+  'unchecked_value'   => '0',
 
   // Required fields
   ////////////////////////////////////////////////////////////////////
