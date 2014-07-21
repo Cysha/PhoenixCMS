@@ -1,10 +1,9 @@
 <div class="form">
-{{ Former::horizontal_open()->action( URL::route('pxcms.user.login') ) }}
+{{ Former::horizontal_open()->action(URL::route('pxcms.user.login')) }}
     <div class="form-group">
-        <?php $login_field = \Config::get('sentry::users.login_attribute', 'email'); ?>
-        <label class="control-label col-md-3" for="{{ $login_field }}">{{ $login_field }}</label>
+        <label class="control-label col-md-3" for="email">Username OR Email</label>
         <div class="col-md-9">
-            <input type="text" class="form-control" id="{{ $login_field }}" name="{{ $login_field }}">
+            <input type="text" class="form-control" id="email" name="email">
         </div>
     </div>
     <div class="form-group">

@@ -3,14 +3,14 @@
             @endif
 
             <?php
-                if( Session::has('error') && count(Session::get('error')) ){
+                if (Session::has('error') && count(Session::get('error'))) {
                     $error = Session::get('error');
                     //echo \Debug::dump($error, '');
-                    if( is_array($error) ){
+                    if (is_array($error)) {
                         // foreach( $error as $field => $e ){
                         //     echo '<div class="alert alert-danger"><strong>Warning:</strong> '.( is_array($e) ? implode('<br /><strong>Warning:</strong> ', $e) : $e ).'</div>';
                         // }
-                    }else{
+                    } else {
                         echo '<div class="alert alert-danger"><strong>Warning:</strong> '. Session::get('error') .'</div>';
                     }
                 }
