@@ -21,7 +21,7 @@
 
 
 <!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
 
@@ -40,17 +40,6 @@
         </main>
     </section>
 </div>
-
-<section class="col-1">
-    <main>
-        <div class="container">
-    		{{ Theme::partial('theme.msgs') }}
-    	</div>
-    	<div class="container">
-    		{{ Theme::content() }}
-    	</div>
-    </main>
-</section>
 
 {{ Theme::partial('theme.footer') }}
 
