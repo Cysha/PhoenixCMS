@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <p>Dont have account? {{ HTML::link('/register', 'Register', array('class' => '')) }} here.</p>
+            <p>Dont have account? {{ HTML::link( URL::route('pxcms.user.register'), 'Register') }} here.</p>
         </div>
     </div>
 </div>
