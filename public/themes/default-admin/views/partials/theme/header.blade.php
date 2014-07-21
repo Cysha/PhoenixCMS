@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ URL::route('home') }}">{{ Config::get('app.site-name') }} ACP</a>
+        <a class="navbar-brand" href="{{ URL::route('home') }}">{{ Config::get('core::app.site-name') }} ACP</a>
     </div>
 
 @if( !Auth::guest() && Auth::user()->isAdmin() )
@@ -68,7 +68,7 @@
                 <ul class="dropdown-menu">
                     <li><a href="{{ URL::to('/') }}"><i class="fa fa-gear"></i> Site Home</a></li>
                     <li class="divider"></li>
-                    <li><a href="{{ URL::route('admin.auth.logout') }}"><i class="fa fa-power-off"></i> Log Out</a></li>
+                    <li><a href="{{ URL::route('pxcms.admin.logout') }}"><i class="fa fa-power-off"></i> Log Out</a></li>
                 </ul>
             </li>
         </ul>
