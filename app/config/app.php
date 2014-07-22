@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Filesystem\Filesystem as File;
+
 return array(
 
     /*
@@ -24,7 +26,7 @@ return array(
     |
     */
 
-    'debug' => true,
+    'debug' => File::exists(storage_path().'/meta/debugfile'),
 
     /*
     |--------------------------------------------------------------------------

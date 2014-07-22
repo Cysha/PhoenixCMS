@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Config;
+use Illuminate\Filesystem\Filesystem as File;
 
 return array(
 
@@ -13,7 +13,7 @@ return array(
      |
      */
 
-    'enabled' => true,
+    'enabled' => File::exists(storage_path().'/meta/debugfile'),
 
     /*
      |--------------------------------------------------------------------------

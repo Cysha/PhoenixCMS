@@ -12,7 +12,7 @@ return array(
     'inherit' => 'default', //default
 
     'events' => array(
-        'before' => function($theme) {
+        'before' => function ($theme) {
             $theme->setTitle( Config::get('app.site-name').' Admin Panel');
 
             // Breadcrumb template.
@@ -29,14 +29,14 @@ return array(
             ');
         },
 
-        'asset' => function($asset){
-            $asset->cook('datagrid', function($asset){
+        'asset' => function ($asset) {
+            $asset->cook('datagrid', function ($asset) {
                 $asset->add('tempojs', '/packages/cartalyst/data-grid/js/tempo.js', array('app.js'));
                 $asset->add('datagridjs', '/packages/cartalyst/data-grid/js/data-grid.js', array('app.js', 'tempojs'));
             });
         },
 
-        'beforeRenderTheme' => function($theme) {
+        'beforeRenderTheme' => function ($theme) {
             $theme->asset()->usePath()->add('base', 'css/sb-admin.css', array('bs3.css', 'jasny-bs3.css'));
 
             // add dropdown-menu classes and such for the bootstrap toggle
@@ -45,7 +45,7 @@ return array(
 
             Menu::handler('acp')
                 ->getAllItemLists()
-                ->map(function($itemList) {
+                ->map(function ($itemList) {
                     if( $itemList->getParent() !== null && $itemList->hasChildren() ) {
                         $itemList->getParent()->getValue()->addClass('dropdown-toggle')->data_toggle('dropdown');
                         $itemList->addClass('dropdown-menu');
@@ -55,7 +55,7 @@ return array(
             // add dropdown class to the li if the set has children
             Menu::handler('acp')
                 ->getItemsByContentType('Menu\Items\Contents\Link')
-                ->map(function($item) {
+                ->map(function ($item) {
                     if( $item->hasChildren() ) {
                         $item->addClass('dropdown');
                         $item->getValue()->setValue($item->getValue()->getValue().' <span class="fa fa-caret-down"></span>');
@@ -67,10 +67,12 @@ return array(
                         }
                     }
                 });
+
+            Menu::handler('acp.config_menu')->addClass('nav');
         },
 
         'beforeRenderLayout' => array(
-            'default' => function($theme) {
+            'default' => function ($theme) {
                 Assets::add('admin');
                 $theme->asset()->usePath()->add('app.js', 'js/app/application.js', array('bs3.js', 'jasny-bs3.js'));
                 $theme->asset()->usePath()->add('modernizr', 'js/modernizr.js');
