@@ -2,7 +2,7 @@
 
 return array(
     // theme info
-    'name'    => 'Default Admin',
+    'name'    => 'default-admin',
     'author'  => 'Dan Aldridge',
     'site'    => 'http://cysha.co.uk',
     'type'    => 'backend',
@@ -13,11 +13,11 @@ return array(
 
     'events' => array(
         'before' => function ($theme) {
-            $theme->setTitle(Config::get('core::app.site-name').' Admin Panel');
+            $theme->setTitle( Config::get('app.site-name').' Admin Panel');
 
             // Breadcrumb template.
-            $theme->breadcrumb()->setTemplate(
-                '<ol class="breadcrumb">
+            $theme->breadcrumb()->setTemplate('
+                <ol class="breadcrumb">
                 @foreach ($crumbs as $i => $crumb)
                     @if ($i != (count($crumbs) - 1))
                     <li><a href="{{ $crumb["url"] }}">{{ $crumb["label"] }}</a></li>
@@ -25,11 +25,15 @@ return array(
                     <li class="active">{{ $crumb["label"] }}</li>
                     @endif
                 @endforeach
-                </ol>'
-            );
+                </ol>
+            ');
         },
 
         'asset' => function ($asset) {
+            $asset->cook('datagrid', function ($asset) {
+                $asset->add('tempojs', '/packages/cartalyst/data-grid/js/tempo.js', array('app.js'));
+                $asset->add('datagridjs', '/packages/cartalyst/data-grid/js/data-grid.js', array('app.js', 'tempojs'));
+            });
         },
 
         'beforeRenderTheme' => function ($theme) {
@@ -41,7 +45,7 @@ return array(
             Menu::handler('acp')
                 ->getAllItemLists()
                 ->map(function ($itemList) {
-                    if ($itemList->getParent() !== null && $itemList->hasChildren()) {
+                    if( $itemList->getParent() !== null && $itemList->hasChildren() ) {
                         $itemList->addClass('nav nav-second-level');
                     }
                 });
@@ -50,7 +54,7 @@ return array(
             Menu::handler('acp')
                 ->getItemsByContentType('Menu\Items\Contents\Link')
                 ->map(function ($item) {
-                    if ($item->hasChildren()) {
+                    if( $item->hasChildren() ) {
                         $item->getValue()->addClass('text-center title');
                         //$item->getValue()->setValue($item->getValue()->getValue().' <span class="fa arrow"></span>');
                     }
