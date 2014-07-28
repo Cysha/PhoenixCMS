@@ -4,7 +4,7 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework"					: "~4.2",
+		"laravel/framework"					: "4.2.6",
 
         "creolab/laravel-modules"           : "dev-master",
         "barryvdh/laravel-debugbar"         : "dev-master",
@@ -12,7 +12,9 @@
 
         "cysha/pxcms-admin"                 : "dev-master",
         "cysha/pxcms-core"                  : "dev-master",
-        "cysha/pxcms-auth"                  : "dev-master"
+        "cysha/pxcms-auth"                  : "dev-master",
+        "cysha/pxcms-forum"                 : "dev-master",
+        "cysha/pxcms-pages"                 : "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master"
@@ -46,7 +48,7 @@
 		]
 	},
 	"config": {
-		"preferred-install": "dist"
+		"preferred-install": "dev"
 	},
 	"minimum-stability": "dev"
 }
