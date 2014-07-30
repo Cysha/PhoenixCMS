@@ -23,7 +23,7 @@
             @endif
 
             <div class="form">
-                {{ Former::horizontal_open()->action(URL::to('pxcms.user.login')) }}
+                {{ Former::horizontal_open()->action('/login') }}   
                     <div class="form-group">
                         <label class="control-label col-md-3" for="username">Username</label>
                         <div class="col-md-9">
@@ -44,7 +44,7 @@
                                 </label>
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
                     <div class="form-group">
                         <div class="col-md-9 col-md-offset-3">
@@ -53,10 +53,10 @@
                         </div>
                     </div>
                 {{ Form::token() , Former::close() }}
-            </div>
+            </div> 
         </div>
         <div class="modal-footer">
-            <p>Dont have account? {{ HTML::link( URL::route('pxcms.user.register'), 'Register') }} here.</p>
+            <p>Dont have account? {{ HTML::link('/register', 'Register', array('class' => '')) }} here.</p>
         </div>
     </div>
 </div>

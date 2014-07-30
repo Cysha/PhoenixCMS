@@ -1,0 +1,11 @@
+.page-header {
+  margin: 0 0 20px;
+}
+.divider hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+section header nav ul {
+  list-style: none;
+  padding-left: 0;
+}

@@ -1,77 +1,35 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ URL::route('pxcms.admin.index') }}">{{{ Config::get('core::app.site-name') }}} ACP</a>
+        <a class="navbar-brand" href="{{ URL::route('pxcms.admin.index') }}">
+            {{ Config::get('core::app.site-name') }}
+        </a>
     </div>
 
-@if( !Auth::guest() && Auth::user()->isAdmin() )
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        {{ Menu::handler('acp')->render() }}
-
-        <ul class="nav navbar-nav navbar-right navbar-user">
-        <?php /**
-            <li class="dropdown messages-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-header">7 New Messages</li>
-                    <li class="message-preview">
-                        <a href="#">
-                            <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                            <span class="name">John Smith:</span>
-                            <span class="message">Hey there, I wanted to ask you something...</span>
-                            <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="message-preview">
-                        <a href="#">
-                            <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                            <span class="name">John Smith:</span>
-                            <span class="message">Hey there, I wanted to ask you something...</span>
-                            <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="message-preview">
-                        <a href="#">
-                            <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                            <span class="name">John Smith:</span>
-                            <span class="message">Hey there, I wanted to ask you something...</span>
-                            <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-                </ul>
-            </li>
-            <li class="dropdown alerts-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-                    <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-                    <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-                    <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-                    <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-                    <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">View All</a></li>
-                </ul>
-            </li>
-            **/ ?>
-            <li class="dropdown user-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> {{{ Auth::user()->username }}} <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="{{ URL::route('pxcms.pages.home') }}"><i class="fa fa-gear"></i> Site Home</a></li>
-                    <li class="divider"></li>
-                    <li><a href="{{ URL::route('pxcms.admin.logout') }}"><i class="fa fa-power-off"></i> Log Out</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div><!-- /.navbar-collapse -->
-@endif
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-user fa-fw"></i> {{ Auth::user()->username }} <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                <!-- <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a></li> -->
+                <li><a href="/admin/admin_profile/change_password"><i class="fa fa-gear fa-fw"></i> Change Password</a></li>
+                <li class="divider"></li>
+                <li><a href="{{ URL::Route('pxcms.admin.logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>
+
+@if( !Auth::guest() && Auth::user()->isAdmin() )
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+    {{ Menu::handler('acp')->render() }}
+    </div>
+</nav>
+@endif
