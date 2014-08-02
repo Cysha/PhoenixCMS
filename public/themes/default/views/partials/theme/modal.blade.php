@@ -9,7 +9,7 @@
     </div>
 </div>
 
-@if( Auth::check() === false )
+@if(Auth::check() === false && !in_array(Request::url(), [URL::route('pxcms.user.login'), URL::route('pxcms.user.register')]))
 <div id="login" class="modal fade">
 <div class="modal-dialog">
     <div class="modal-content">
