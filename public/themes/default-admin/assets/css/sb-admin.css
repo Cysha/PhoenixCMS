@@ -233,6 +233,12 @@ table.dataTable thead .sorting:after {
   font-family: fontawesome;
   color: rgba(50, 50, 50, 0.5);
 }
+table thead tr th {
+  background-color: white;
+}
+table.table-striped tr.even td {
+  background-color: white;
+}
 /* ------------------------------- */
 /* Badges Overrides */
 /* ------------------------------- */

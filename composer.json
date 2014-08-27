@@ -13,8 +13,10 @@
         "cysha/pxcms-admin"                 : "dev-master",
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master",
-        "cysha/pxcms-forum"                 : "dev-master",
-        "cysha/pxcms-pages"                 : "dev-master"
+        "cysha/pxcms-pages"                 : "dev-master",
+        "cysha/pxcms-news"                  : "dev-master",
+
+        "darchoods/pxcms-darchoods"         : "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master"
@@ -32,6 +34,8 @@
 		]
 	},
     "repositories": [
+        { "type": "composer", "url": "http://packages.cybershade.org/" },
+        { "type": "composer", "url": "http://packages.phoenixcms.org/" },
         { "type": "vcs", "url": "https://github.com/cysha/installers" }
     ],
 	"scripts": {

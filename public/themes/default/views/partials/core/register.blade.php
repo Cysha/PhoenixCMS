@@ -8,7 +8,6 @@
     <div class="form-group">
         <div class="col-md-9 col-md-offset-3">
         {{ Former::framework('Nude'); }}
-        <label for="promo">{{ Former::checkbox('promo')->label(false) }} I want to receive promotional material about products from this Shop.</label>
         <label for="tnc">{{ Former::checkbox('tnc')->required()->label(false) }} I agree to the terms and conditions</label>
         {{ Former::framework('TwitterBootstrap3') }}
         </div>

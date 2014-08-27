@@ -52,7 +52,7 @@ return array(
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/London',
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return array(
     |
     */
 
-    'key' => 'SpdPMnhFCswzDNlJ4JDYWPrFLMbBA4fv',
+    'key' => '9bvPng10g9XBsafZZl0vy9CFMEVoiOdh',
 
     /*
     |--------------------------------------------------------------------------
