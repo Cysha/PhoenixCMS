@@ -2,11 +2,7 @@
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  /* 1 */
-
   display: table;
-  /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -49,6 +45,7 @@
 body {
   background-color: #F4F4F4;
   font-family: 'Roboto', sans-serif;
+  padding-top: 70px;
 }
 body header {
   background-color: #343434;
@@ -121,7 +118,7 @@ body .page-heading .left {
 @media (min-width: 992px) {
   body .page-heading .left {
     float: left;
-    width: 83.33333333333334%;
+    width: 83.33333333%;
   }
 }
 body .page-heading .left a {
@@ -141,7 +138,7 @@ body .page-heading .right {
 @media (min-width: 992px) {
   body .page-heading .right {
     float: left;
-    width: 16.666666666666664%;
+    width: 16.66666667%;
   }
 }
 /** Off Canvas Menu **/
