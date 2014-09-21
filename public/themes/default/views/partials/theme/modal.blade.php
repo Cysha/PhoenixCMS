@@ -23,7 +23,7 @@
             @endif
 
             <div class="form">
-                {{ Former::horizontal_open()->action(URL::to('pxcms.user.login')) }}
+                {{ Former::horizontal_open()->action(URL::route('pxcms.user.login')) }}
                     <div class="form-group">
                         <label class="control-label col-md-3" for="username">Username</label>
                         <div class="col-md-9">
