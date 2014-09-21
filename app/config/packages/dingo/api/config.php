@@ -39,7 +39,9 @@ return [
     |
     */
 
-    'auth' => ['basic'],
+    'auth' => ['custom' => function($app) {
+        return new Cysha\Modules\Auth\ApiAuthenticationProvider($app['auth']);
+    }],
 
     /*
     |--------------------------------------------------------------------------
