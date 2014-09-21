@@ -8,6 +8,7 @@
 
         "creolab/laravel-modules"           : "dev-master",
         "barryvdh/laravel-debugbar"         : "dev-master",
+        "dingo/api"                         : "dev-master",
         "composer/installers"               : "dev-master",
 
         "cysha/pxcms-admin"                 : "dev-master",
