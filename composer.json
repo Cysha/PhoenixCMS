@@ -18,7 +18,8 @@
         "cysha/pxcms-news"                  : "dev-master",
 
         "darchoods/pxcms-darchoods"         : "dev-master",
-        "darchoods/pxcms-darchoods-theme"   : "dev-master"
+        "darchoods/pxcms-darchoods-theme"   : "dev-master",
+        "darchoods/pxcms-qdb-server"        : "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master"
