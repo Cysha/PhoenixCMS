@@ -36,7 +36,7 @@ If you do not set that variable, it will default to local.
 Then duplicate the base config folder, and call it the same thing you set the LARAVEL_ENV to.
 Run the following from the root of the project
 ```bash
-$ cp app/config/base/ app/config/production
+$ cp -r app/config/base/ app/config/production
 $ vim app/config/production/database.php
 ```
 and populate the array with your database details
