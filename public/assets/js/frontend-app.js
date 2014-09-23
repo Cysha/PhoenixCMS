@@ -1,4 +1,4 @@
-jQuery( document ).ready(function(){
+jQuery(document).load(function(){
     jQuery('[data-toggle="tooltip"]').each(function() { jQuery(this).tooltip(); });
     jQuery('[data-toggle="popover"]').each(function() { jQuery(this).popover(); });
 
