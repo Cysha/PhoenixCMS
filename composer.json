@@ -4,7 +4,7 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework"					: "4.2.6",
+		"laravel/framework"					: "4.2.*",
 
         "creolab/laravel-modules"           : "dev-master",
         "barryvdh/laravel-debugbar"         : "dev-master",
@@ -15,11 +15,7 @@
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master",
         "cysha/pxcms-pages"                 : "dev-master",
-        "cysha/pxcms-news"                  : "dev-master",
-
-        "darchoods/pxcms-darchoods"         : "dev-master",
-        "darchoods/pxcms-darchoods-theme"   : "dev-master",
-        "darchoods/pxcms-qdb-server"        : "dev-master"
+        "cysha/pxcms-news"                  : "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master"
