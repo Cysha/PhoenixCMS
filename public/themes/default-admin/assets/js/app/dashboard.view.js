@@ -1,5 +1,0 @@
-jQuery(window).load(function() {
-
-
-
-});
