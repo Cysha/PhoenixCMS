@@ -11,6 +11,9 @@
         "dingo/api"                         : "dev-master",
         "composer/installers"               : "dev-master",
 
+        "cysha/pxcms-default"               : "dev-master",
+        "cysha/pxcms-default-admin"         : "dev-master",
+
         "cysha/pxcms-admin"                 : "dev-master",
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master",
