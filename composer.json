@@ -15,7 +15,8 @@
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master",
         "cysha/pxcms-pages"                 : "dev-master",
-        "cysha/pxcms-news"                  : "dev-master"
+        "cysha/pxcms-news"                  : "dev-master",
+        "cysha/pxcms-forum"                 : "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master"
