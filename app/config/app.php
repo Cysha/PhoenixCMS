@@ -134,10 +134,10 @@ return array(
         'Illuminate\View\ViewServiceProvider',
         'Illuminate\Workbench\WorkbenchServiceProvider',
 
-        'Creolab\LaravelModules\ServiceProvider',       # https://github.com/creolab/laravel-modules
-
         'Barryvdh\Debugbar\ServiceProvider',            # https://github.com/barryvdh/laravel-debugbar
-        'Dingo\Api\Provider\ApiServiceProvider',                 # https://github.com/dingo/api
+        'Dingo\Api\Provider\ApiServiceProvider',        # https://github.com/dingo/api
+
+        'Creolab\LaravelModules\ServiceProvider',       # https://github.com/creolab/laravel-modules
     ),
 
     /*
