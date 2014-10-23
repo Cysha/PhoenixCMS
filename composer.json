@@ -22,7 +22,8 @@
         "cysha/pxcms-forum"                 : "dev-master"
 	},
 	"require-dev":{
-        "fzaninotto/faker"                  : "dev-master"
+        "fzaninotto/faker"                  : "dev-master",
+        "codeception/codeception"           : "~2.0"
 	},
 	"autoload": {
 		"classmap": [
