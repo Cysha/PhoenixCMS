@@ -21,9 +21,23 @@ Run a composer install from the root of the project:
 ```bash
 $ composer.phar install
 ```
-Providing composer didn't throw any errors, that should be all the dependancies installed.
 
 *3.*
+Assuming you have NPM installed, run the installer from the root of the project:
+```bash
+$ npm install
+```
+
+*4.*
+Run the bower installer from the root of the project:
+```bash
+$ npm install -g bower # run this if you dont have bower installed
+$ bower install
+```
+
+Providing none of the above threw any errors, that should be all the dependancies installed.
+
+*5.*
 (optional) Next thing to do is configure the environment,
 
 * find your apache vhost that you wish to use,
@@ -32,7 +46,7 @@ Providing composer didn't throw any errors, that should be all the dependancies 
 
 If you do not set that variable, it will default to local.
 
-*4.*
+*6.*
 Then duplicate the base config folder, and call it the same thing you set the LARAVEL_ENV to.
 Run the following from the root of the project
 ```bash
@@ -41,19 +55,11 @@ $ vim app/config/production/database.php
 ```
 and populate the array with your database details
 
-*5.*
+*7.*
 Last thing to do then is run the installer from the root of the project, and follow the prompts
 ```bash
 $ php artisan cms:install
 ```
-
-## Dependencies (included in this project)
-
-### CSS
-### Javascript
-### PHP
-
-
 ## Versioning
 
 Releases will be numbered with the follow format:

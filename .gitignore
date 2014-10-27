@@ -8,5 +8,10 @@ composer.lock
 Thumbs.db
 
 /app/modules/*/
-/app/config/local/*
-/app/config/production/*
+/app/config/local/
+/app/config/production/
+/app/config/testing/
+/public/themes/
+
+/app/assets/vendor/
+/node_modules/

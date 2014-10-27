@@ -1,0 +1,9 @@
+{
+  "name": "assets",
+  "version": "0.0.1",
+  "devDependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.1.0",
+    "jasny-bootstrap": "~3.1.3"
+  }
+}
