@@ -99,4 +99,4 @@ Thanks to the people that have contributed and helped test/find bugs in the proj
 
 Copyright (c) 2013 Cysha
 
-PXCMS is licensed under the [<LICENCE>](#).
+PXCMS is licensed under the [MIT LICENSE](http://opensource.org/licenses/MIT).
