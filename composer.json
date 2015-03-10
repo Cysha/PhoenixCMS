@@ -6,9 +6,9 @@
 	"require": {
 		"laravel/framework"					: "4.2.*",
 
-        "creolab/laravel-modules"           : "dev-master",
-        "barryvdh/laravel-debugbar"         : "dev-master",
-        "dingo/api"                         : "dev-master",
+        "creolab/laravel-modules"           : "~0.5",
+        "barryvdh/laravel-debugbar"         : "~1.8",
+        "dingo/api"                         : "~0.6",
         "composer/installers"               : "dev-master",
 
         "cysha/pxcms-default"               : "dev-master",
