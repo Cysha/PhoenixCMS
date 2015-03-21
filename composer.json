@@ -21,7 +21,6 @@
         "cysha/pxcms-pages"                 : "dev-master",
         "cysha/pxcms-analytics"             : "dev-master",
         "cysha/pxcms-blog"                  : "dev-master",
-        "cysha/pxcms-forum"                  : "dev-master",
         "cysha/pxcms-news"                  : "dev-master"
 	},
 	"require-dev":{
