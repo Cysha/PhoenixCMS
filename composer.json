@@ -13,13 +13,16 @@
 
         "cysha/pxcms-default"               : "dev-master",
         "cysha/pxcms-default-admin"         : "dev-master",
+        "cysha/pxcms-adminlte"         		: "dev-master",
 
         "cysha/pxcms-admin"                 : "dev-master",
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master",
         "cysha/pxcms-pages"                 : "dev-master",
-        "cysha/pxcms-news"                  : "dev-master",
-        "cysha/pxcms-forum"                 : "dev-master"
+        "cysha/pxcms-analytics"             : "dev-master",
+        "cysha/pxcms-blog"                  : "dev-master",
+        "cysha/pxcms-forum"                  : "dev-master",
+        "cysha/pxcms-news"                  : "dev-master"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master",
