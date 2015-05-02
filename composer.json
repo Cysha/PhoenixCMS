@@ -11,17 +11,19 @@
         "dingo/api"                         : "~0.6",
         "composer/installers"               : "dev-master",
 
-        "cysha/pxcms-default"               : "dev-master",
-        "cysha/pxcms-default-admin"         : "dev-master",
-        "cysha/pxcms-adminlte"         		: "dev-master",
+        "cysha/pxcms-default"               : "0.*",
+        "cysha/pxcms-default-admin"         : "0.*",
+        "cysha/pxcms-adminlte"         		: "0.*",
 
-        "cysha/pxcms-admin"                 : "dev-master",
-        "cysha/pxcms-core"                  : "dev-master",
-        "cysha/pxcms-auth"                  : "dev-master",
-        "cysha/pxcms-pages"                 : "dev-master",
-        "cysha/pxcms-analytics"             : "dev-master",
-        "cysha/pxcms-blog"                  : "dev-master",
-        "cysha/pxcms-news"                  : "dev-master"
+        "cysha/pxcms-admin"                 : "0.*",
+        "cysha/pxcms-core"                  : "0.*",
+        "cysha/pxcms-auth"                  : "0.*",
+        "cysha/pxcms-pages"                 : "0.*",
+        "cysha/pxcms-analytics"             : "0.*",
+        "cysha/pxcms-blog"                  : "0.*",
+        "cysha/pxcms-news"                  : "0.*",
+        "cysha/pxcms-forum"                 : "0.*",
+        "cysha/pxcms-faq"                   : "0.*"
 	},
 	"require-dev":{
         "fzaninotto/faker"                  : "dev-master",
