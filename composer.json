@@ -1,66 +1,62 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
-	"require": {
-		"laravel/framework"					: "4.2.*",
-
-        "creolab/laravel-modules"           : "~0.5",
-        "barryvdh/laravel-debugbar"         : "~1.8",
-        "dingo/api"                         : "~0.6",
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "laravel/framework"                 : "~5.0",
         "composer/installers"               : "dev-master",
 
-        "cysha/pxcms-default"               : "0.*",
-        "cysha/pxcms-default-admin"         : "0.*",
-        "cysha/pxcms-adminlte"         		: "0.*",
+        "pingpong/modules"                  : "2.0.*@dev",
 
-        "cysha/pxcms-admin"                 : "0.*",
-        "cysha/pxcms-core"                  : "0.*",
-        "cysha/pxcms-auth"                  : "0.*",
-        "cysha/pxcms-pages"                 : "0.*",
-        "cysha/pxcms-analytics"             : "0.*",
-        "cysha/pxcms-blog"                  : "0.*",
-        "cysha/pxcms-news"                  : "0.*",
-        "cysha/pxcms-forum"                 : "0.*",
-        "cysha/pxcms-faq"                   : "0.*"
-	},
-	"require-dev":{
-        "fzaninotto/faker"                  : "dev-master",
-        "codeception/codeception"           : "~2.0"
-	},
-	"autoload": {
-		"classmap": [
-			"app/helpers",
-            "app/commands",
-            "app/controllers",
-            "app/models",
-            "app/database/migrations",
-            "app/database/seeds",
-            "app/modules",
-			"app/tests/TestCase.php"
-		]
-	},
+        "cysha/pxcms-default"               : "dev-master",
+        "cysha/pxcms-default-admin"         : "dev-master",
+        "cysha/pxcms-adminlte"              : "dev-master",
+
+        "cysha/pxcms-core"                  : "dev-master"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit"                   : "~4.0",
+        "phpspec/phpspec"                   : "~2.1",
+        "barryvdh/laravel-debugbar"         : "~2.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Cms\\": "app/",
+            "Cms\\Modules": "app/Modules/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
     "repositories": [
-        { "type": "composer", "url": "http://packages.cybershade.org/" },
         { "type": "composer", "url": "http://packages.phoenixcms.org/" },
         { "type": "vcs", "url": "https://github.com/cysha/installers" }
     ],
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize"
-		],
-		"post-update-cmd": [
-			"php artisan clear-compiled",
-			"php artisan optimize"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dev"
-	},
-	"minimum-stability": "dev"
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan optimize"
+        ],
+        "post-create-project-cmd": [
+            "php -r \"copy('.env.example', '.env');\"",
+            "php artisan key:generate"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

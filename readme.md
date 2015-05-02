@@ -4,62 +4,20 @@
 
 ## Requirements
 
+* Laravel 5
 * PHP 5.4+
-* MySQL 4+ (no support for other DBMS at this time)
+* MySQL 4+ (no official support for other DBMS at this time)
 * Apache Rewrite Module *`Enabled`*
+* Mcrypt PHP Extension
+* OpenSSL PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
 
 ## Installation
 
-*1.*
-Clone this project into a directory
-```bash
-$ git clone https://github.com/Cysha/PhoenixCMS.git pxcms
-```
+.. coming soon ..
 
-*2.*
-Run a composer install from the root of the project:
-```bash
-$ composer.phar install
-```
 
-*3.*
-Assuming you have NPM installed, run the installer from the root of the project:
-```bash
-$ npm install
-```
-
-*4.*
-Run the bower installer from the root of the project:
-```bash
-$ npm install -g bower # run this if you dont have bower installed
-$ bower install
-```
-
-Providing none of the above threw any errors, that should be all the dependancies installed.
-
-*5.*
-(optional) Next thing to do is configure the environment,
-
-* find your apache vhost that you wish to use,
-* ensure the directory root is path/to/project/**public**
-* and that ```SetEnv LARAVEL_ENV production``` is set in the vhost.
-
-If you do not set that variable, it will default to local.
-
-*6.*
-Then duplicate the base config folder, and call it the same thing you set the LARAVEL_ENV to.
-Run the following from the root of the project
-```bash
-$ cp -r app/config/base/ app/config/production
-$ vim app/config/production/database.php
-```
-and populate the array with your database details
-
-*7.*
-Last thing to do then is run the installer from the root of the project, and follow the prompts
-```bash
-$ php artisan cms:install
-```
 ## Versioning
 
 Releases will be numbered with the follow format:
@@ -74,16 +32,17 @@ And constructed with the following guidelines:
 
 ## Documentation
 
-Documentation when available will show up on the website.
+.. coming soon ..
 
-## Extensions, Themes, and Plugins
+## Modules, Themes, and Plugins
 
 The CMS is fully customizable from themes and modules to language packs, documentation on how to create these will be posted on the website in due course.
 
 ## Support
 
-The CMS has basic support for IE6 & 7, and should be *FULLY* supported from IE8+, Chrome, Firefox2+ and Opera.
-There has been no tests done on smart phones yet, but if you have any issues please post specifics.
+If you encounter problems with using the CMS, keeping in mind that it isn't a full release yet, please post on an issue on the repository. Module specific issues would be better posted to the correct module to keep tracking easier.
+
+Pull requests are welcome.
 
 ## Awesome People
 
@@ -94,6 +53,7 @@ Thanks to the people that have contributed and helped test/find bugs in the proj
 - [Richard Clifford](https://github.com/DarkMantisCS)
 - [John Maguire](https://github.com/johnmaguire2013)
 - [Infy](https://github.com/infyhr)
+- [Daniel Selley](https://github.com/danselley)
 
 ## License
 

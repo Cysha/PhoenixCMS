@@ -1,0 +1,41 @@
+
+.flash{
+    -moz-animation: flash 1s ease;
+    -moz-animation-iteration-count: 1;
+
+    -webkit-animation: flash 1s ease;
+    -webkit-animation-iteration-count: 1;
+
+    -ms-animation: flash 1s ease;
+    -ms-animation-iteration-count: 1;
+}
+
+.no-flash {
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+}
+
+@-webkit-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:#fff000;}
+    100% {background-color:none;}
+}
+
+@-moz-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:#fff000;}
+    100% {background-color:none;}
+}
+
+@-ms-keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:#fff000;}
+    100% {background-color:none;}
+}
+
+@keyframes flash {
+    0% { background-color:none;}
+    50% { background-color:#fff000;}
+    100% {background-color:none;}
+}
