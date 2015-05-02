@@ -4,7 +4,7 @@
 
 ## Requirements
 
-* Laravel 5
+* Laravel 5 (For L4.2 checkout the [v0.1](https://github.com/Cysha/PhoenixCMS/releases/tag/v0.1) tag)
 * PHP 5.4+
 * MySQL 4+ (no official support for other DBMS at this time)
 * Apache Rewrite Module *`Enabled`*
