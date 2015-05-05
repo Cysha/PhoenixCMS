@@ -3,3 +3,4 @@
 .env
 app/Modules
 storage/debugbar/
+themes/
