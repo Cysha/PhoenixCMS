@@ -2,6 +2,7 @@
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Cms\Modules\Core\Exceptions\NotInstalledException;
 
 class Handler extends ExceptionHandler
 {
@@ -11,8 +12,10 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        'Symfony\Component\HttpKernel\Exception\HttpException'
+        'Symfony\Component\HttpKernel\Exception\HttpException',
+        'Cms\Modules\Core\Exceptions\NotInstalledException'
     ];
+
     /**
      * Report or log an exception.
      *
@@ -37,6 +40,10 @@ class Handler extends ExceptionHandler
     {
         if (config('app.debug') && class_exists('\Whoops\Run')) {
             return $this->renderExceptionWithWhoops($e);
+        }
+
+        if ($e instanceof \Cms\Modules\Core\Exceptions\NotInstalledException) {
+            die(view('notInstalled'));
         }
 
         return parent::render($request, $e);
