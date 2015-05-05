@@ -30,7 +30,10 @@
         "psr-4": {
             "Cms\\": "app/",
             "Cms\\Modules\\": "app/Modules"
-        }
+        },
+        "files": [
+            "app/Helpers/Debug.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [

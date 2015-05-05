@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b6f4e508922f825a56755f32f9a038a3",
+    "hash": "f7c0fe1ea08860878df625f29e41e1da",
     "packages": [
         {
             "name": "anahkiasen/former",
@@ -294,12 +294,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "93cfbedbcab0aefe32f77b9ab2c3dba83c7a40a6"
+                "reference": "feb0e096fd754d8be525947a93bd8662720e6599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/93cfbedbcab0aefe32f77b9ab2c3dba83c7a40a6",
-                "reference": "93cfbedbcab0aefe32f77b9ab2c3dba83c7a40a6",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/feb0e096fd754d8be525947a93bd8662720e6599",
+                "reference": "feb0e096fd754d8be525947a93bd8662720e6599",
                 "shasum": ""
             },
             "require": {
@@ -325,7 +325,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-05 19:32:18"
+            "time": "2015-05-05 21:19:47"
         },
         {
             "name": "cysha/pxcms-default",
@@ -333,12 +333,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default.git",
-                "reference": "469a6190521678efdeff00034c96a47d7bc86fe5"
+                "reference": "33ebb69805e467e78925a3aec02c929fd0ec891f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/469a6190521678efdeff00034c96a47d7bc86fe5",
-                "reference": "469a6190521678efdeff00034c96a47d7bc86fe5",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/33ebb69805e467e78925a3aec02c929fd0ec891f",
+                "reference": "33ebb69805e467e78925a3aec02c929fd0ec891f",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,7 @@
                 "source": "https://github.com/Cysha/pxcms-default/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default/issues"
             },
-            "time": "2015-05-05 16:25:33"
+            "time": "2015-05-05 21:56:18"
         },
         {
             "name": "cysha/pxcms-default-admin",
