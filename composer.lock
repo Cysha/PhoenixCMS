@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c80d1eb600451cd2a326e5189225f743",
+    "hash": "b6f4e508922f825a56755f32f9a038a3",
     "packages": [
         {
             "name": "anahkiasen/former",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/formers/former.git",
-                "reference": "4a03cdd08f1bdd975bd2521bed74ab38bf590388"
+                "reference": "42e158dcde0869fd3ac794d4611bb06c19b29f50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/formers/former/zipball/4a03cdd08f1bdd975bd2521bed74ab38bf590388",
-                "reference": "4a03cdd08f1bdd975bd2521bed74ab38bf590388",
+                "url": "https://api.github.com/repos/formers/former/zipball/42e158dcde0869fd3ac794d4611bb06c19b29f50",
+                "reference": "42e158dcde0869fd3ac794d4611bb06c19b29f50",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "foundation",
                 "laravel"
             ],
-            "time": "2015-04-20 13:53:18"
+            "time": "2015-05-05 19:13:30"
         },
         {
             "name": "anahkiasen/html-object",
@@ -294,12 +294,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "ac375bccf0b0b9ef6ffd04d7aca87a8868524efd"
+                "reference": "93cfbedbcab0aefe32f77b9ab2c3dba83c7a40a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/ac375bccf0b0b9ef6ffd04d7aca87a8868524efd",
-                "reference": "ac375bccf0b0b9ef6ffd04d7aca87a8868524efd",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/93cfbedbcab0aefe32f77b9ab2c3dba83c7a40a6",
+                "reference": "93cfbedbcab0aefe32f77b9ab2c3dba83c7a40a6",
                 "shasum": ""
             },
             "require": {
@@ -325,7 +325,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-05 12:26:15"
+            "time": "2015-05-05 19:32:18"
         },
         {
             "name": "cysha/pxcms-default",
@@ -333,12 +333,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default.git",
-                "reference": "7d41a4d22d48b8f17385725a1e88448cdfa5671f"
+                "reference": "469a6190521678efdeff00034c96a47d7bc86fe5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/7d41a4d22d48b8f17385725a1e88448cdfa5671f",
-                "reference": "7d41a4d22d48b8f17385725a1e88448cdfa5671f",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/469a6190521678efdeff00034c96a47d7bc86fe5",
+                "reference": "469a6190521678efdeff00034c96a47d7bc86fe5",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,7 @@
                 "source": "https://github.com/Cysha/pxcms-default/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default/issues"
             },
-            "time": "2015-05-05 13:05:43"
+            "time": "2015-05-05 16:25:33"
         },
         {
             "name": "cysha/pxcms-default-admin",
@@ -1724,12 +1724,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "97af2c72727fc1cf15bc3bdfe8cf87b09ea5b9ba"
+                "reference": "5202b35099e880183e9bcbacdb01dc4346622800"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/97af2c72727fc1cf15bc3bdfe8cf87b09ea5b9ba",
-                "reference": "97af2c72727fc1cf15bc3bdfe8cf87b09ea5b9ba",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5202b35099e880183e9bcbacdb01dc4346622800",
+                "reference": "5202b35099e880183e9bcbacdb01dc4346622800",
                 "shasum": ""
             },
             "require": {
@@ -1791,7 +1791,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-05-02 13:35:36"
+            "time": "2015-05-05 17:26:17"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -1983,12 +1983,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/modules.git",
-                "reference": "d7dbb30cd3d52bf0e91d7eb72979275331c98769"
+                "reference": "c083fdbadfb8f78680a2e500b58aa6ce42a4f690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/d7dbb30cd3d52bf0e91d7eb72979275331c98769",
-                "reference": "d7dbb30cd3d52bf0e91d7eb72979275331c98769",
+                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/c083fdbadfb8f78680a2e500b58aa6ce42a4f690",
+                "reference": "c083fdbadfb8f78680a2e500b58aa6ce42a4f690",
                 "shasum": ""
             },
             "require": {
@@ -2032,7 +2032,7 @@
                 "modules",
                 "pingpong"
             ],
-            "time": "2015-04-28 20:44:10"
+            "time": "2015-05-05 18:21:27"
         },
         {
             "name": "psr/log",
@@ -2198,19 +2198,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "728eba28e355e081b0729b4c18cb9c13abe12560"
+                "reference": "23f17f5b1e40853295b89b0f8a198dd7ffc3add8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/728eba28e355e081b0729b4c18cb9c13abe12560",
-                "reference": "728eba28e355e081b0729b4c18cb9c13abe12560",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/23f17f5b1e40853295b89b0f8a198dd7ffc3add8",
+                "reference": "23f17f5b1e40853295b89b0f8a198dd7ffc3add8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9.1"
+                "mockery/mockery": "~0.9.1,<0.9.4"
             },
             "type": "library",
             "extra": {
@@ -2242,7 +2242,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2015-03-30 15:09:02"
+            "time": "2015-05-05 19:38:20"
         },
         {
             "name": "symfony/console",
@@ -2842,12 +2842,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "e019ff5cb9c951adb52732798544eb4165e9e846"
+                "reference": "398e0eedcb89243ad34a10d079a4b6ea4c0b61ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/e019ff5cb9c951adb52732798544eb4165e9e846",
-                "reference": "e019ff5cb9c951adb52732798544eb4165e9e846",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/398e0eedcb89243ad34a10d079a4b6ea4c0b61ff",
+                "reference": "398e0eedcb89243ad34a10d079a4b6ea4c0b61ff",
                 "shasum": ""
             },
             "require": {
@@ -2892,7 +2892,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-04 20:55:59"
+            "time": "2015-05-05 16:51:00"
         },
         {
             "name": "symfony/var-dumper",
