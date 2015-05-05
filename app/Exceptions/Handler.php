@@ -2,7 +2,6 @@
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Cms\Modules\Core\Exceptions\NotInstalledException;
 
 class Handler extends ExceptionHandler
 {
@@ -43,10 +42,63 @@ class Handler extends ExceptionHandler
         }
 
         if ($e instanceof \Cms\Modules\Core\Exceptions\NotInstalledException) {
-            die(view('notInstalled'));
+            return $this->renderNotInstalled($e);
+        }
+
+        if ($e instanceof \PDOException) {
+            return $this->renderPdoException($e);
         }
 
         return parent::render($request, $e);
+    }
+
+    /**
+     * Render a PDOException.
+     *
+     * @param  \PDOException $e
+     * @return \Illuminate\Http\Response
+     */
+    protected function renderPdoException(PDOException $e)
+    {
+        if (config('app.debug', false) === true) {
+
+            $message = explode(' ', $e->getMessage());
+            $dbCode = rtrim($message[1], ']');
+            $dbCode = trim($dbCode, '[');
+
+            // codes specific to MySQL
+            switch ($dbCode) {
+                case 1049:
+                    $userMessage = 'Unknown database - probably config error:';
+                    break;
+                case 2002:
+                    $userMessage = 'DATABASE IS DOWN:';
+                    break;
+                case 1045:
+                    $userMessage = 'Incorrect DB Credentials:';
+                    break;
+                default:
+                    $userMessage = 'Untrapped Error:';
+                    break;
+            }
+            $userMessage = $userMessage . '<br>' . $e->getMessage();
+        } else {
+            // be apologetic but never specific ;)
+            $userMessage = 'We are currently experiencing a site wide issue. We are sorry for the inconvenience!';
+        }
+
+        return response($userMessage);
+    }
+
+    /**
+     * Render an exception for notInstalled.
+     *
+     * @param  \Exception $e
+     * @return \Illuminate\Http\Response
+     */
+    protected function renderNotInstalled(Exception $e)
+    {
+        die(view('notInstalled'));
     }
 
     /**

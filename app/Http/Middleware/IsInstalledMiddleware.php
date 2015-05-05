@@ -16,7 +16,7 @@ class IsInstalledMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (!file_exists(base_path('.env')) || !Schema::hasTable(with(new \Cms\Modules\Core\Models\DBConfig)->table)) {
+        if (!file_exists(base_path('.env'))) {
             throw new \Cms\Modules\Core\Exceptions\NotInstalledException('PhoenixCMS has not been installed');
         }
 
