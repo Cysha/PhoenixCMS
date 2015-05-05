@@ -1,6 +1,7 @@
 /vendor
 /node_modules
 .env
-app/Modules
 storage/debugbar/
+app/Modules
+config/modules.*.php
 themes/
