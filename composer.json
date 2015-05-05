@@ -9,6 +9,7 @@
         "composer/installers"               : "dev-master",
 
         "pingpong/modules"                  : "2.0.*@dev",
+        "filp/whoops"                       : "~1.0",
 
         "cysha/pxcms-default"               : "dev-master",
         "cysha/pxcms-default-admin"         : "dev-master",
@@ -27,8 +28,7 @@
             "database"
         ],
         "psr-4": {
-            "Cms\\": "app/",
-            "Cms\\Modules\\": "app/Modules/"
+            "Cms\\": "app/"
         }
     },
     "autoload-dev": {

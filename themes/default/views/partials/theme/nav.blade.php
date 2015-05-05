@@ -4,5 +4,5 @@
     <li><a href="{{ URL::route('pxcms.user.login') }}">Login</a></li>
     <li><a href="{{ URL::route('pxcms.user.register') }}">Register</a></li>
     @else
-    <li><a href="{{ URL::route('pxcms.user.logout') }}">{{{ 'Logout ['.Auth::user()->username.']' }}}</a></li>
+    <li><a href="{{ URL::route('pxcms.user.logout') }}">{{ 'Logout ['.Auth::user()->username.']' }}</a></li>
     @endif

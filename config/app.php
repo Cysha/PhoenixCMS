@@ -148,7 +148,7 @@ return [
         /*
          * CMS Package Service Providers
          */
-        //'Barryvdh\Debugbar\ServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
         'Cms\Modules\Core\Providers\CmsModulesProvider',
 
     ],

@@ -1,0 +1,1 @@
+<p>sidebar-right</p>
