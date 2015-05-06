@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/formers/former.git",
-                "reference": "42e158dcde0869fd3ac794d4611bb06c19b29f50"
+                "reference": "e37cb69d12d4436282e6754800903d94788528f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/formers/former/zipball/42e158dcde0869fd3ac794d4611bb06c19b29f50",
-                "reference": "42e158dcde0869fd3ac794d4611bb06c19b29f50",
+                "url": "https://api.github.com/repos/formers/former/zipball/e37cb69d12d4436282e6754800903d94788528f3",
+                "reference": "e37cb69d12d4436282e6754800903d94788528f3",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "foundation",
                 "laravel"
             ],
-            "time": "2015-05-05 19:13:30"
+            "time": "2015-05-06 00:01:16"
         },
         {
             "name": "anahkiasen/html-object",
@@ -294,12 +294,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "feb0e096fd754d8be525947a93bd8662720e6599"
+                "reference": "2ad2c34e35200cf710a42c3f04563feff66c99fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/feb0e096fd754d8be525947a93bd8662720e6599",
-                "reference": "feb0e096fd754d8be525947a93bd8662720e6599",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/2ad2c34e35200cf710a42c3f04563feff66c99fa",
+                "reference": "2ad2c34e35200cf710a42c3f04563feff66c99fa",
                 "shasum": ""
             },
             "require": {
@@ -325,7 +325,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-05 21:19:47"
+            "time": "2015-05-06 15:10:15"
         },
         {
             "name": "cysha/pxcms-default",
@@ -767,12 +767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "0383db83a085d3e36383fd560f29eb81d5d5ba48"
+                "reference": "9e7954694971a5fab6ebabb38f9ffeec49d0d2ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/0383db83a085d3e36383fd560f29eb81d5d5ba48",
-                "reference": "0383db83a085d3e36383fd560f29eb81d5d5ba48",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/9e7954694971a5fab6ebabb38f9ffeec49d0d2ad",
+                "reference": "9e7954694971a5fab6ebabb38f9ffeec49d0d2ad",
                 "shasum": ""
             },
             "require": {
@@ -830,7 +830,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-04-30 17:25:52"
+            "time": "2015-05-06 10:30:29"
         },
         {
             "name": "doctrine/inflector",
@@ -1532,12 +1532,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LaravelCollective/html.git",
-                "reference": "55eb889aca2ff8d8a9d564a5606dee9223ee5dd2"
+                "reference": "a0a763779d357d37fa05997c9f60fef8d6e0de62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/55eb889aca2ff8d8a9d564a5606dee9223ee5dd2",
-                "reference": "55eb889aca2ff8d8a9d564a5606dee9223ee5dd2",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/a0a763779d357d37fa05997c9f60fef8d6e0de62",
+                "reference": "a0a763779d357d37fa05997c9f60fef8d6e0de62",
                 "shasum": ""
             },
             "require": {
@@ -1574,7 +1574,7 @@
                     "email": "adam@laravelcollective.com"
                 }
             ],
-            "time": "2015-04-23 14:38:50"
+            "time": "2015-05-06 15:48:56"
         },
         {
             "name": "league/flysystem",
@@ -2581,12 +2581,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "88a5a649398534b01b8839159d540cf0442201f5"
+                "reference": "10cfc670658c678c3909a010fff24eba3d08c056"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/88a5a649398534b01b8839159d540cf0442201f5",
-                "reference": "88a5a649398534b01b8839159d540cf0442201f5",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/10cfc670658c678c3909a010fff24eba3d08c056",
+                "reference": "10cfc670658c678c3909a010fff24eba3d08c056",
                 "shasum": ""
             },
             "require": {
@@ -2650,7 +2650,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-05 01:50:03"
+            "time": "2015-05-06 14:13:47"
         },
         {
             "name": "symfony/process",
@@ -3122,16 +3122,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "813c5a9c39186b0a84613035824d9929a5467fc9"
+                "reference": "94945bb36e910646fd74740348a762bcaceb70d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/813c5a9c39186b0a84613035824d9929a5467fc9",
-                "reference": "813c5a9c39186b0a84613035824d9929a5467fc9",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/94945bb36e910646fd74740348a762bcaceb70d4",
+                "reference": "94945bb36e910646fd74740348a762bcaceb70d4",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "~5.0.17",
+                "illuminate/support": "~5.0.17|5.1.*",
                 "maximebf/debugbar": "~1.10.2",
                 "php": ">=5.4.0",
                 "symfony/finder": "~2.6"
@@ -3168,7 +3168,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2015-04-21 20:44:35"
+            "time": "2015-05-03 13:59:38"
         },
         {
             "name": "doctrine/instantiator",
