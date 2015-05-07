@@ -36,7 +36,7 @@ return array(
     |
     */
 
-    'layoutDefault' => 'default',
+    'layoutDefault' => 'basic',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return array(
         'asset'   => 'assets',
         'partial' => 'views/partials',
         'widget'  => 'widgets',
-        'view'    => 'partials'
+        'view'    => 'views'
     ),
 
     /*
