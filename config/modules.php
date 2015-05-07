@@ -94,11 +94,11 @@ return [
         */
 
         'generator' => [
-            'assets'     => 'Assets',
+            'assets'     => 'Resources/assets',
             'config'     => 'Config',
             'command'    => 'Console',
             'migration'  => 'Database/Migrations',
-            'model'      => 'Entities',
+            'model'      => 'Models',
             'repository' => 'Repositories',
             'seeder'     => 'Database/Seeders',
             'controller' => 'Http/Controllers',
