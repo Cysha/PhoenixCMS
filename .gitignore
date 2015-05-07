@@ -5,3 +5,5 @@ storage/debugbar/
 app/Modules
 config/modules.*.php
 themes/
+public/themes/*/
+public/modules/*/
