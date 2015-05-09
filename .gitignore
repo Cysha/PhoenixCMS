@@ -7,3 +7,4 @@ config/modules.*.php
 themes/
 public/themes/*/
 public/modules/*/
+database/migrations/
