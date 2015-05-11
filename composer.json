@@ -16,7 +16,8 @@
         "cysha/pxcms-adminlte"              : "dev-master",
 
         "cysha/pxcms-core"                  : "dev-master",
-        "cysha/pxcms-auth"                  : "dev-master"
+        "cysha/pxcms-auth"                  : "dev-master",
+        "cysha/pxcms-admin"                 : "dev-master"
 
     },
     "require-dev": {
