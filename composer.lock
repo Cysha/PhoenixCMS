@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f7c0fe1ea08860878df625f29e41e1da",
+    "hash": "da8215a6e2a39ec8b6f2dbeaba0addc8",
     "packages": [
         {
             "name": "anahkiasen/former",
@@ -105,21 +105,141 @@
             "time": "2015-03-04 17:12:08"
         },
         {
+            "name": "beatswitch/lock",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BeatSwitch/lock.git",
+                "reference": "5f909f497b2d03135882beb41e735fb27bb7be85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BeatSwitch/lock/zipball/5f909f497b2d03135882beb41e735fb27bb7be85",
+                "reference": "5f909f497b2d03135882beb41e735fb27bb7be85",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.1",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BeatSwitch\\Lock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com",
+                    "homepage": "http://driesvints.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "BeatSwitch",
+                    "email": "hello@beatswitch.com",
+                    "homepage": "https://www.beatswitch.com"
+                }
+            ],
+            "description": "A flexible, driver based Acl package for PHP 5.4+",
+            "homepage": "https://github.com/BeatSwitch/lock",
+            "keywords": [
+                "acl",
+                "asserts",
+                "beatswitch",
+                "conditions",
+                "drivers",
+                "permissions",
+                "roles",
+                "security"
+            ],
+            "time": "2014-12-17 17:35:43"
+        },
+        {
+            "name": "beatswitch/lock-laravel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BeatSwitch/lock-laravel.git",
+                "reference": "583d263177e1980e038eccebbda85bfd3a623095"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BeatSwitch/lock-laravel/zipball/583d263177e1980e038eccebbda85bfd3a623095",
+                "reference": "583d263177e1980e038eccebbda85bfd3a623095",
+                "shasum": ""
+            },
+            "require": {
+                "beatswitch/lock": "0.1.*",
+                "illuminate/auth": "5.0.*",
+                "illuminate/database": "5.0.*",
+                "illuminate/support": "5.0.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BeatSwitch\\Lock\\Integrations\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com",
+                    "homepage": "http://driesvints.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "BeatSwitch",
+                    "email": "hello@beatswitch.com",
+                    "homepage": "https://www.beatswitch.com"
+                }
+            ],
+            "description": "A Laravel Driver for Lock.",
+            "homepage": "https://github.com/BeatSwitch/lock",
+            "keywords": [
+                "acl",
+                "asserts",
+                "beatswitch",
+                "conditions",
+                "drivers",
+                "laravel",
+                "permissions",
+                "roles",
+                "security"
+            ],
+            "time": "2015-03-25 14:26:54"
+        },
+        {
             "name": "classpreloader/classpreloader",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ClassPreloader/ClassPreloader.git",
-                "reference": "4dd524a2a066dca9df1ec54661c0bfad577f42de"
+                "reference": "5786305f273a67e3edbea40a53e1da99629a9a52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/4dd524a2a066dca9df1ec54661c0bfad577f42de",
-                "reference": "4dd524a2a066dca9df1ec54661c0bfad577f42de",
+                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/5786305f273a67e3edbea40a53e1da99629a9a52",
+                "reference": "5786305f273a67e3edbea40a53e1da99629a9a52",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^1.2.2",
+                "nikic/php-parser": "~1.3",
                 "php": ">=5.3.3",
                 "symfony/console": "~2.1",
                 "symfony/filesystem": "~2.1",
@@ -162,7 +282,7 @@
                 "class",
                 "preload"
             ],
-            "time": "2015-04-18 20:26:42"
+            "time": "2015-05-07 23:37:58"
         },
         {
             "name": "composer/installers",
@@ -289,17 +409,53 @@
             "time": "2015-04-09 12:34:42"
         },
         {
+            "name": "cysha/pxcms-auth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cysha/pxcms-auth.git",
+                "reference": "18393cde08bf73d2098eeb549ddd8c3a61502cf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/18393cde08bf73d2098eeb549ddd8c3a61502cf8",
+                "reference": "18393cde08bf73d2098eeb549ddd8c3a61502cf8",
+                "shasum": ""
+            },
+            "require": {
+                "beatswitch/lock-laravel": "dev-master",
+                "composer/installers": "dev-master",
+                "laravel/socialite": "~2.0"
+            },
+            "type": "pxcms-module",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "xLink",
+                    "email": "xLink@cybershade.org"
+                }
+            ],
+            "description": "Authentication Module for Phoenix CMS v1",
+            "support": {
+                "source": "https://github.com/Cysha/pxcms-auth/tree/master",
+                "issues": "https://github.com/Cysha/pxcms-auth/issues"
+            },
+            "time": "2015-05-10 18:31:01"
+        },
+        {
             "name": "cysha/pxcms-core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "2ad2c34e35200cf710a42c3f04563feff66c99fa"
+                "reference": "62fb6349e25002cdd4230c9953bd606d6b603508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/2ad2c34e35200cf710a42c3f04563feff66c99fa",
-                "reference": "2ad2c34e35200cf710a42c3f04563feff66c99fa",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/62fb6349e25002cdd4230c9953bd606d6b603508",
+                "reference": "62fb6349e25002cdd4230c9953bd606d6b603508",
                 "shasum": ""
             },
             "require": {
@@ -325,7 +481,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-06 15:10:15"
+            "time": "2015-05-09 09:53:03"
         },
         {
             "name": "cysha/pxcms-default",
@@ -333,12 +489,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default.git",
-                "reference": "33ebb69805e467e78925a3aec02c929fd0ec891f"
+                "reference": "f1fe59e3162086b1b06a946b4e4c3df9071a72ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/33ebb69805e467e78925a3aec02c929fd0ec891f",
-                "reference": "33ebb69805e467e78925a3aec02c929fd0ec891f",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/f1fe59e3162086b1b06a946b4e4c3df9071a72ea",
+                "reference": "f1fe59e3162086b1b06a946b4e4c3df9071a72ea",
                 "shasum": ""
             },
             "require": {
@@ -350,7 +506,7 @@
             ],
             "authors": [
                 {
-                    "name": "xLink",
+                    "name": "xLink (Dan Aldridge)",
                     "email": "xLink@cybershade.org"
                 }
             ],
@@ -359,7 +515,7 @@
                 "source": "https://github.com/Cysha/pxcms-default/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default/issues"
             },
-            "time": "2015-05-05 21:56:18"
+            "time": "2015-05-07 16:05:09"
         },
         {
             "name": "cysha/pxcms-default-admin",
@@ -558,12 +714,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "9d141335b758cbff3c58b52777836ce945522a68"
+                "reference": "c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/9d141335b758cbff3c58b52777836ce945522a68",
-                "reference": "9d141335b758cbff3c58b52777836ce945522a68",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2",
+                "reference": "c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2",
                 "shasum": ""
             },
             "require": {
@@ -620,7 +776,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-04-28 19:52:40"
+            "time": "2015-05-07 20:41:18"
         },
         {
             "name": "doctrine/collections",
@@ -1056,6 +1212,101 @@
             "time": "2015-04-12 16:35:52"
         },
         {
+            "name": "guzzle/guzzle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle3.git",
+                "reference": "b3f5050cb6270c7a728a0b74ac2de50a262b3e02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/b3f5050cb6270c7a728a0b74ac2de50a262b3e02",
+                "reference": "b3f5050cb6270c7a728a0b74ac2de50a262b3e02",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.3",
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "replace": {
+                "guzzle/batch": "self.version",
+                "guzzle/cache": "self.version",
+                "guzzle/common": "self.version",
+                "guzzle/http": "self.version",
+                "guzzle/inflection": "self.version",
+                "guzzle/iterator": "self.version",
+                "guzzle/log": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/plugin": "self.version",
+                "guzzle/plugin-async": "self.version",
+                "guzzle/plugin-backoff": "self.version",
+                "guzzle/plugin-cache": "self.version",
+                "guzzle/plugin-cookie": "self.version",
+                "guzzle/plugin-curlauth": "self.version",
+                "guzzle/plugin-error-response": "self.version",
+                "guzzle/plugin-history": "self.version",
+                "guzzle/plugin-log": "self.version",
+                "guzzle/plugin-md5": "self.version",
+                "guzzle/plugin-mock": "self.version",
+                "guzzle/plugin-oauth": "self.version",
+                "guzzle/service": "self.version",
+                "guzzle/stream": "self.version"
+            },
+            "require-dev": {
+                "doctrine/cache": "~1.3",
+                "monolog/monolog": "~1.0",
+                "phpunit/phpunit": "3.7.*",
+                "psr/log": "~1.0",
+                "symfony/class-loader": "~2.1",
+                "zendframework/zend-cache": "2.*,<2.3",
+                "zendframework/zend-log": "2.*,<2.3"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle": "src/",
+                    "Guzzle\\Tests": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Guzzle Community",
+                    "homepage": "https://github.com/guzzle/guzzle/contributors"
+                }
+            ],
+            "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-04-29 17:06:53"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "5.2.0",
             "source": {
@@ -1406,12 +1657,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d8a39c45ec087ec8fd467002ce49aa05c641b612"
+                "reference": "125809bc364159773c09e5f480cff7f29a89fdea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d8a39c45ec087ec8fd467002ce49aa05c641b612",
-                "reference": "d8a39c45ec087ec8fd467002ce49aa05c641b612",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/125809bc364159773c09e5f480cff7f29a89fdea",
+                "reference": "125809bc364159773c09e5f480cff7f29a89fdea",
                 "shasum": ""
             },
             "require": {
@@ -1524,7 +1775,61 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-02 13:57:20"
+            "time": "2015-05-09 14:17:50"
+        },
+        {
+            "name": "laravel/socialite",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/socialite.git",
+                "reference": "3d5f6560f8642c4973b5e54a67b1368ee81ff24d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/3d5f6560f8642c4973b5e54a67b1368ee81ff24d",
+                "reference": "3d5f6560f8642c4973b5e54a67b1368ee81ff24d",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~4.0|~5.0",
+                "illuminate/contracts": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/support": "~5.0",
+                "league/oauth1-client": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
+            "keywords": [
+                "laravel",
+                "oauth"
+            ],
+            "time": "2015-03-13 02:40:10"
         },
         {
             "name": "laravelcollective/html",
@@ -1661,6 +1966,69 @@
             "time": "2015-04-29 12:07:30"
         },
         {
+            "name": "league/oauth1-client",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth1-client.git",
+                "reference": "b378b2ba54f0de789628c9b5784bcf01c8303adf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/b378b2ba54f0de789628c9b5784bcf01c8303adf",
+                "reference": "b378b2ba54f0de789628c9b5784bcf01c8303adf",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/guzzle": "3.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.7.2",
+                "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\OAuth1\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Corlett",
+                    "email": "bencorlett@me.com",
+                    "homepage": "http://www.webcomm.com.au",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth 1.0 Client Library",
+            "keywords": [
+                "Authentication",
+                "SSO",
+                "authorization",
+                "bitbucket",
+                "identity",
+                "idp",
+                "oauth",
+                "oauth1",
+                "single sign on",
+                "trello",
+                "tumblr",
+                "twitter"
+            ],
+            "time": "2015-04-07 00:07:18"
+        },
+        {
             "name": "mews/purifier",
             "version": "2.0.0",
             "source": {
@@ -1724,12 +2092,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "5202b35099e880183e9bcbacdb01dc4346622800"
+                "reference": "72123e3d6c7bf8f1454fe12deb69db2f783dd220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5202b35099e880183e9bcbacdb01dc4346622800",
-                "reference": "5202b35099e880183e9bcbacdb01dc4346622800",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/72123e3d6c7bf8f1454fe12deb69db2f783dd220",
+                "reference": "72123e3d6c7bf8f1454fe12deb69db2f783dd220",
                 "shasum": ""
             },
             "require": {
@@ -1791,7 +2159,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-05-05 17:26:17"
+            "time": "2015-05-09 17:17:49"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -1839,21 +2207,21 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "99e2f69f7bdc2cc4334b2d00f1e0ba450623ea36"
+                "reference": "68868e0b02d2d803d0052a59d4e5003cccf87320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/99e2f69f7bdc2cc4334b2d00f1e0ba450623ea36",
-                "reference": "99e2f69f7bdc2cc4334b2d00f1e0ba450623ea36",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/68868e0b02d2d803d0052a59d4e5003cccf87320",
+                "reference": "68868e0b02d2d803d0052a59d4e5003cccf87320",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "symfony/translation": "2.6.*"
+                "symfony/translation": "~2.6"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
@@ -1882,7 +2250,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2015-03-26 03:05:57"
+            "time": "2015-05-09 03:23:44"
         },
         {
             "name": "nikic/php-parser",
@@ -1983,24 +2351,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/modules.git",
-                "reference": "c083fdbadfb8f78680a2e500b58aa6ce42a4f690"
+                "reference": "1eaf2722efb718e4eae311fe2811840a6a61f5ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/c083fdbadfb8f78680a2e500b58aa6ce42a4f690",
-                "reference": "c083fdbadfb8f78680a2e500b58aa6ce42a4f690",
+                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/1eaf2722efb718e4eae311fe2811840a6a61f5ae",
+                "reference": "1eaf2722efb718e4eae311fe2811840a6a61f5ae",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "5.0.*",
                 "laravelcollective/html": "~5.0",
                 "php": ">=5.4.0",
-                "pingpong/generators": "2.0.*@dev"
+                "pingpong/generators": "~2.0"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4",
-                "pingpong/testing": "1.*"
+                "phpunit/phpunit": "~4"
             },
             "type": "library",
             "extra": {
@@ -2032,7 +2399,7 @@
                 "modules",
                 "pingpong"
             ],
-            "time": "2015-05-05 18:21:27"
+            "time": "2015-05-09 17:23:25"
         },
         {
             "name": "psr/log",
@@ -2198,12 +2565,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "23f17f5b1e40853295b89b0f8a198dd7ffc3add8"
+                "reference": "ac8b475454c120bfb31f5bef475233dd4fb6b626"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/23f17f5b1e40853295b89b0f8a198dd7ffc3add8",
-                "reference": "23f17f5b1e40853295b89b0f8a198dd7ffc3add8",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/ac8b475454c120bfb31f5bef475233dd4fb6b626",
+                "reference": "ac8b475454c120bfb31f5bef475233dd4fb6b626",
                 "shasum": ""
             },
             "require": {
@@ -2242,7 +2609,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2015-05-05 19:38:20"
+            "time": "2015-05-06 16:40:00"
         },
         {
             "name": "symfony/console",
@@ -2309,12 +2676,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "572006675e8eeb86440e2025836e9a81674bf59c"
+                "reference": "ad4511a8fddce7ec163b513ba39a30ea4f32c9e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/572006675e8eeb86440e2025836e9a81674bf59c",
-                "reference": "572006675e8eeb86440e2025836e9a81674bf59c",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/ad4511a8fddce7ec163b513ba39a30ea4f32c9e7",
+                "reference": "ad4511a8fddce7ec163b513ba39a30ea4f32c9e7",
                 "shasum": ""
             },
             "require": {
@@ -2361,7 +2728,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-02 15:18:45"
+            "time": "2015-05-08 13:17:44"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2369,12 +2736,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "44bde9645703fe92da9f5dd2755298f7c2c6fa92"
+                "reference": "aced82e3cd15d40e5fadebec5dae9fb1ae666596"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/44bde9645703fe92da9f5dd2755298f7c2c6fa92",
-                "reference": "44bde9645703fe92da9f5dd2755298f7c2c6fa92",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/aced82e3cd15d40e5fadebec5dae9fb1ae666596",
+                "reference": "aced82e3cd15d40e5fadebec5dae9fb1ae666596",
                 "shasum": ""
             },
             "require": {
@@ -2419,7 +2786,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2015-04-24 07:03:44"
+            "time": "2015-05-05 20:46:18"
         },
         {
             "name": "symfony/filesystem",
@@ -2581,12 +2948,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "10cfc670658c678c3909a010fff24eba3d08c056"
+                "reference": "fa6b88720a105873e498483d36a36f34d5427db2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/10cfc670658c678c3909a010fff24eba3d08c056",
-                "reference": "10cfc670658c678c3909a010fff24eba3d08c056",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/fa6b88720a105873e498483d36a36f34d5427db2",
+                "reference": "fa6b88720a105873e498483d36a36f34d5427db2",
                 "shasum": ""
             },
             "require": {
@@ -2650,7 +3017,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-06 14:13:47"
+            "time": "2015-05-11 02:25:53"
         },
         {
             "name": "symfony/process",
@@ -3176,12 +3543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "fc999e2f0508e434645ec2bfadeb89d39fa6453c"
+                "reference": "cd3fe91baa28da6e119d619612439eb2db0d8d88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/fc999e2f0508e434645ec2bfadeb89d39fa6453c",
-                "reference": "fc999e2f0508e434645ec2bfadeb89d39fa6453c",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/cd3fe91baa28da6e119d619612439eb2db0d8d88",
+                "reference": "cd3fe91baa28da6e119d619612439eb2db0d8d88",
                 "shasum": ""
             },
             "require": {
@@ -3222,7 +3589,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-04-12 20:59:10"
+            "time": "2015-05-10 22:20:19"
         },
         {
             "name": "maximebf/debugbar",
@@ -3508,12 +3875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "1678cee3b7f93f994da6acf7e998b23a98e955f1"
+                "reference": "9ef4b8cbf3e839a44a9b375d8c59e109ac7aa020"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/1678cee3b7f93f994da6acf7e998b23a98e955f1",
-                "reference": "1678cee3b7f93f994da6acf7e998b23a98e955f1",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9ef4b8cbf3e839a44a9b375d8c59e109ac7aa020",
+                "reference": "9ef4b8cbf3e839a44a9b375d8c59e109ac7aa020",
                 "shasum": ""
             },
             "require": {
@@ -3562,7 +3929,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-16 05:00:01"
+            "time": "2015-05-09 04:40:58"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4304,7 +4671,8 @@
         "cysha/pxcms-default": 20,
         "cysha/pxcms-default-admin": 20,
         "cysha/pxcms-adminlte": 20,
-        "cysha/pxcms-core": 20
+        "cysha/pxcms-core": 20,
+        "cysha/pxcms-auth": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
