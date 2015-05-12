@@ -141,9 +141,7 @@ return [
          */
         'Cms\Providers\AppServiceProvider',
         'Cms\Providers\BusServiceProvider',
-        'Cms\Providers\ConfigServiceProvider',
         'Cms\Providers\EventServiceProvider',
-        'Cms\Providers\RouteServiceProvider',
 
         /*
          * CMS Package Service Providers
