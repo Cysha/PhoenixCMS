@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "da8215a6e2a39ec8b6f2dbeaba0addc8",
+    "hash": "76b9e918b975a2fe15d6ed6957ace094",
     "packages": [
         {
             "name": "anahkiasen/former",
@@ -105,6 +105,43 @@
             "time": "2015-03-04 17:12:08"
         },
         {
+            "name": "anahkiasen/underscore-php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Anahkiasen/underscore-php.git",
+                "reference": "362e5b1b6d0b4ccdddeed2e9e95f6766ec4f4f2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Anahkiasen/underscore-php/zipball/362e5b1b6d0b4ccdddeed2e9e95f6766ec4f4f2e",
+                "reference": "362e5b1b6d0b4ccdddeed2e9e95f6766ec4f4f2e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Underscore": "src/",
+                    "Laravel": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A redacted port of Underscore.js for PHP",
+            "time": "2013-01-17 23:07:04"
+        },
+        {
             "name": "beatswitch/lock",
             "version": "0.1.0",
             "source": {
@@ -168,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/BeatSwitch/lock-laravel.git",
-                "reference": "583d263177e1980e038eccebbda85bfd3a623095"
+                "reference": "f91cf7b077c94723585e0fd975327a11c8822d13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/BeatSwitch/lock-laravel/zipball/583d263177e1980e038eccebbda85bfd3a623095",
-                "reference": "583d263177e1980e038eccebbda85bfd3a623095",
+                "url": "https://api.github.com/repos/BeatSwitch/lock-laravel/zipball/f91cf7b077c94723585e0fd975327a11c8822d13",
+                "reference": "f91cf7b077c94723585e0fd975327a11c8822d13",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +259,60 @@
                 "roles",
                 "security"
             ],
-            "time": "2015-03-25 14:26:54"
+            "time": "2015-05-12 09:58:36"
+        },
+        {
+            "name": "chumper/datatable",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Chumper/Datatable.git",
+                "reference": "d8a01807d0d0b46e6ff26d760934f885f4f48dc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Chumper/Datatable/zipball/d8a01807d0d0b46e6ff26d760934f885f4f48dc3",
+                "reference": "d8a01807d0d0b46e6ff26d760934f885f4f48dc3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/config": "~5.0",
+                "illuminate/support": "~5.0",
+                "illuminate/view": "~5.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "orchestra/testbench": "2.1.*",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Chumper\\Datatable": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Plaschke",
+                    "email": "github@nilsplaschke.de",
+                    "homepage": "http://nilsplaschke.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is a laravel 4 package for the server and client side of datatablaes at http://datatables.net/",
+            "homepage": "http://github.com/Chumper/datatable",
+            "keywords": [
+                "ajax",
+                "datatables",
+                "jquery",
+                "laravel"
+            ],
+            "time": "2015-04-29 14:51:40"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -371,6 +461,42 @@
             "time": "2015-05-05 13:17:51"
         },
         {
+            "name": "cysha/pxcms-admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cysha/pxcms-admin.git",
+                "reference": "63b23bab6e3fc6ee3476e02d4aa86616a2f5c68e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/63b23bab6e3fc6ee3476e02d4aa86616a2f5c68e",
+                "reference": "63b23bab6e3fc6ee3476e02d4aa86616a2f5c68e",
+                "shasum": ""
+            },
+            "require": {
+                "chumper/datatable": "dev-develop",
+                "composer/installers": "dev-master",
+                "guzzlehttp/guzzle": "~5.0"
+            },
+            "type": "pxcms-module",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "xLink (Dan Aldridge)",
+                    "email": "xLink@cybershade.org"
+                }
+            ],
+            "description": "Admin Module for Phoenix CMS v1",
+            "support": {
+                "source": "https://github.com/Cysha/pxcms-admin/tree/master",
+                "issues": "https://github.com/Cysha/pxcms-admin/issues"
+            },
+            "time": "2015-05-12 09:32:35"
+        },
+        {
             "name": "cysha/pxcms-adminlte",
             "version": "dev-master",
             "source": {
@@ -414,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-auth.git",
-                "reference": "18393cde08bf73d2098eeb549ddd8c3a61502cf8"
+                "reference": "4f32a7790db8a1b4a14d45a55428f9327b938079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/18393cde08bf73d2098eeb549ddd8c3a61502cf8",
-                "reference": "18393cde08bf73d2098eeb549ddd8c3a61502cf8",
+                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/4f32a7790db8a1b4a14d45a55428f9327b938079",
+                "reference": "4f32a7790db8a1b4a14d45a55428f9327b938079",
                 "shasum": ""
             },
             "require": {
@@ -442,7 +568,7 @@
                 "source": "https://github.com/Cysha/pxcms-auth/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-auth/issues"
             },
-            "time": "2015-05-10 18:31:01"
+            "time": "2015-05-11 14:33:11"
         },
         {
             "name": "cysha/pxcms-core",
@@ -450,12 +576,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "62fb6349e25002cdd4230c9953bd606d6b603508"
+                "reference": "a78856382d924e68179479170e03d318a752add6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/62fb6349e25002cdd4230c9953bd606d6b603508",
-                "reference": "62fb6349e25002cdd4230c9953bd606d6b603508",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/a78856382d924e68179479170e03d318a752add6",
+                "reference": "a78856382d924e68179479170e03d318a752add6",
                 "shasum": ""
             },
             "require": {
@@ -464,7 +590,8 @@
                 "guzzlehttp/guzzle": "~5.0",
                 "laravelcollective/html": "~5.0",
                 "mews/purifier": "~2.0",
-                "teepluss/theme": "~2.0"
+                "teepluss/theme": "~2.0",
+                "vespakoen/menu": "dev-master"
             },
             "type": "pxcms-module",
             "license": [
@@ -481,7 +608,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-09 09:53:03"
+            "time": "2015-05-12 10:17:01"
         },
         {
             "name": "cysha/pxcms-default",
@@ -489,12 +616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default.git",
-                "reference": "f1fe59e3162086b1b06a946b4e4c3df9071a72ea"
+                "reference": "53e558f3fda3e8d49662468dfec358f0eb368088"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/f1fe59e3162086b1b06a946b4e4c3df9071a72ea",
-                "reference": "f1fe59e3162086b1b06a946b4e4c3df9071a72ea",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/53e558f3fda3e8d49662468dfec358f0eb368088",
+                "reference": "53e558f3fda3e8d49662468dfec358f0eb368088",
                 "shasum": ""
             },
             "require": {
@@ -515,7 +642,7 @@
                 "source": "https://github.com/Cysha/pxcms-default/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default/issues"
             },
-            "time": "2015-05-07 16:05:09"
+            "time": "2015-05-11 18:24:45"
         },
         {
             "name": "cysha/pxcms-default-admin",
@@ -523,12 +650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default-admin.git",
-                "reference": "fdd70fd75c6a03da8054fc013f52eec9da842c57"
+                "reference": "633af5f4a9a6d76f4590be4cc3a075a311f135c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default-admin/zipball/fdd70fd75c6a03da8054fc013f52eec9da842c57",
-                "reference": "fdd70fd75c6a03da8054fc013f52eec9da842c57",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default-admin/zipball/633af5f4a9a6d76f4590be4cc3a075a311f135c2",
+                "reference": "633af5f4a9a6d76f4590be4cc3a075a311f135c2",
                 "shasum": ""
             },
             "require": {
@@ -549,7 +676,7 @@
                 "source": "https://github.com/Cysha/pxcms-default-admin/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default-admin/issues"
             },
-            "time": "2014-12-11 09:51:15"
+            "time": "2015-05-11 18:24:18"
         },
         {
             "name": "danielstjules/stringy",
@@ -1657,12 +1784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "125809bc364159773c09e5f480cff7f29a89fdea"
+                "reference": "9f9d7f8a31580fbe571ee35eda9091582dd3dbad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/125809bc364159773c09e5f480cff7f29a89fdea",
-                "reference": "125809bc364159773c09e5f480cff7f29a89fdea",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/9f9d7f8a31580fbe571ee35eda9091582dd3dbad",
+                "reference": "9f9d7f8a31580fbe571ee35eda9091582dd3dbad",
                 "shasum": ""
             },
             "require": {
@@ -1775,7 +1902,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-09 14:17:50"
+            "time": "2015-05-12 10:23:27"
         },
         {
             "name": "laravel/socialite",
@@ -1783,12 +1910,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "3d5f6560f8642c4973b5e54a67b1368ee81ff24d"
+                "reference": "c2b2b9c74e3c16b7417c7dc81c54b0dd565a5335"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/3d5f6560f8642c4973b5e54a67b1368ee81ff24d",
-                "reference": "3d5f6560f8642c4973b5e54a67b1368ee81ff24d",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/c2b2b9c74e3c16b7417c7dc81c54b0dd565a5335",
+                "reference": "c2b2b9c74e3c16b7417c7dc81c54b0dd565a5335",
                 "shasum": ""
             },
             "require": {
@@ -1829,7 +1956,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2015-03-13 02:40:10"
+            "time": "2015-05-11 16:13:17"
         },
         {
             "name": "laravelcollective/html",
@@ -2092,12 +2219,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "72123e3d6c7bf8f1454fe12deb69db2f783dd220"
+                "reference": "bf2bff61743f20a13dc46ff1e3bbd0f19c997d2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/72123e3d6c7bf8f1454fe12deb69db2f783dd220",
-                "reference": "72123e3d6c7bf8f1454fe12deb69db2f783dd220",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bf2bff61743f20a13dc46ff1e3bbd0f19c997d2b",
+                "reference": "bf2bff61743f20a13dc46ff1e3bbd0f19c997d2b",
                 "shasum": ""
             },
             "require": {
@@ -2159,7 +2286,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-05-09 17:17:49"
+            "time": "2015-05-11 14:51:05"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -3431,6 +3558,56 @@
             "time": "2014-10-17 12:53:44"
         },
         {
+            "name": "vespakoen/menu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vespakoen/menu.git",
+                "reference": "d4448a9c2b7b73a3187f21be636002395b86cd56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vespakoen/menu/zipball/d4448a9c2b7b73a3187f21be636002395b86cd56",
+                "reference": "d4448a9c2b7b73a3187f21be636002395b86cd56",
+                "shasum": ""
+            },
+            "require": {
+                "anahkiasen/html-object": "~1.4",
+                "anahkiasen/underscore-php": "~1",
+                "illuminate/config": "5.*",
+                "illuminate/container": "5.*",
+                "illuminate/http": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.0.*",
+                "phpunit/phpunit": "4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Menu": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Koen Schmeets",
+                    "email": "hello@koenschmeets.nl"
+                }
+            ],
+            "description": "Managing menus the easy way.",
+            "keywords": [
+                "laravel",
+                "laravel 5",
+                "menu"
+            ],
+            "time": "2015-02-15 12:31:20"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "dev-master",
             "source": {
@@ -3653,12 +3830,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "d1da796ba5565789a623052eb9f2cf59d57fec60"
+                "reference": "ae15da2ce234d3ffe5d7fafcdad19c7f1acf3568"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d1da796ba5565789a623052eb9f2cf59d57fec60",
-                "reference": "d1da796ba5565789a623052eb9f2cf59d57fec60",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/ae15da2ce234d3ffe5d7fafcdad19c7f1acf3568",
+                "reference": "ae15da2ce234d3ffe5d7fafcdad19c7f1acf3568",
                 "shasum": ""
             },
             "require": {
@@ -3668,7 +3845,6 @@
                 "phpunit/phpunit": "~4.0"
             },
             "suggest": {
-                "dflydev/markdown": "~1.0",
                 "erusev/parsedown": "~1.0",
                 "league/commonmark": "*"
             },
@@ -3695,7 +3871,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2015-02-27 09:28:18"
+            "time": "2015-05-12 07:21:12"
         },
         {
             "name": "phpspec/php-diff",
@@ -4672,7 +4848,8 @@
         "cysha/pxcms-default-admin": 20,
         "cysha/pxcms-adminlte": 20,
         "cysha/pxcms-core": 20,
-        "cysha/pxcms-auth": 20
+        "cysha/pxcms-auth": 20,
+        "cysha/pxcms-admin": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -49,10 +49,13 @@
     "scripts": {
         "post-install-cmd": [
             "php artisan clear-compiled",
+            "php artisan theme:publish",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "php artisan clear-compiled",
+            "php artisan theme:publish",
+            "php artisan vendor:publish --tag='Cms\\Modules\\Core\\Providers\\CoreModuleServiceProvider' --force",
             "php artisan optimize"
         ],
         "post-create-project-cmd": [
