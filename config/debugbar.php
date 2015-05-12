@@ -87,7 +87,7 @@ return array(
         'mail'            => true,  // Catch mail messages
         'logs'            => false, // Add the latest log messages
         'files'           => true, // Show the included files
-        'config'          => false, // Display config settings
+        'config'          => true, // Display config settings
         'auth'            => false, // Display Laravel authentication status
         'session'         => false, // Display session data in a separate tab
     ),

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG'),
+    'debug' => file_exists(storage_path().'/app/debugfile'),
 
     /*
     |--------------------------------------------------------------------------
