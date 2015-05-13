@@ -3,7 +3,7 @@
 .env
 storage/debugbar/
 app/Modules
-config/modules.*.php
+config/cms.*.php
 themes/
 public/themes/*/
 public/modules/*/
