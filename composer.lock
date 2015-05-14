@@ -540,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-auth.git",
-                "reference": "2a12d1bc61468ec47d4a5fde143070177ab61b6c"
+                "reference": "1f0d3086c5cc9588045982183a10b2c719f2b4f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/2a12d1bc61468ec47d4a5fde143070177ab61b6c",
-                "reference": "2a12d1bc61468ec47d4a5fde143070177ab61b6c",
+                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/1f0d3086c5cc9588045982183a10b2c719f2b4f7",
+                "reference": "1f0d3086c5cc9588045982183a10b2c719f2b4f7",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +568,7 @@
                 "source": "https://github.com/Cysha/pxcms-auth/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-auth/issues"
             },
-            "time": "2015-05-13 22:49:28"
+            "time": "2015-05-14 16:20:17"
         },
         {
             "name": "cysha/pxcms-core",
@@ -576,12 +576,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "9fc70f6a2c7ff3d3a2a72295386621f5a6207606"
+                "reference": "a8ab94d1b447268c116aed813c9cc455a2627581"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/9fc70f6a2c7ff3d3a2a72295386621f5a6207606",
-                "reference": "9fc70f6a2c7ff3d3a2a72295386621f5a6207606",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/a8ab94d1b447268c116aed813c9cc455a2627581",
+                "reference": "a8ab94d1b447268c116aed813c9cc455a2627581",
                 "shasum": ""
             },
             "require": {
@@ -591,7 +591,8 @@
                 "laravelcollective/html": "~5.0",
                 "mews/purifier": "~2.0",
                 "teepluss/theme": "~2.0",
-                "vespakoen/menu": "dev-master"
+                "vespakoen/menu": "dev-master",
+                "watson/rememberable": "~1.0"
             },
             "type": "pxcms-module",
             "license": [
@@ -608,7 +609,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-13 15:33:19"
+            "time": "2015-05-14 16:17:38"
         },
         {
             "name": "cysha/pxcms-default",
@@ -1784,12 +1785,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "65dbdb37e1010a83d0f87ea82583013d384851a2"
+                "reference": "cc697364e2583c5cf80868bbea0949283fa6ee70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/65dbdb37e1010a83d0f87ea82583013d384851a2",
-                "reference": "65dbdb37e1010a83d0f87ea82583013d384851a2",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/cc697364e2583c5cf80868bbea0949283fa6ee70",
+                "reference": "cc697364e2583c5cf80868bbea0949283fa6ee70",
                 "shasum": ""
             },
             "require": {
@@ -1902,7 +1903,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-13 14:45:42"
+            "time": "2015-05-14 14:12:37"
         },
         {
             "name": "laravel/socialite",
@@ -3021,12 +3022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "8a0d00980ef9f6b47ddbf24bdfbf70fead760816"
+                "reference": "0d82153fadfae25f162bfc16f6b5c2feacb1a0d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/8a0d00980ef9f6b47ddbf24bdfbf70fead760816",
-                "reference": "8a0d00980ef9f6b47ddbf24bdfbf70fead760816",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/0d82153fadfae25f162bfc16f6b5c2feacb1a0d3",
+                "reference": "0d82153fadfae25f162bfc16f6b5c2feacb1a0d3",
                 "shasum": ""
             },
             "require": {
@@ -3066,7 +3067,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-02 15:18:45"
+            "time": "2015-05-14 17:42:48"
         },
         {
             "name": "symfony/http-kernel",
@@ -3075,12 +3076,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "db50a8b45f67294a4b0b5e20f9c663c62174a7d6"
+                "reference": "7eb7036dcb8b965ba0b93c8aca7ebaeb8444bbde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/db50a8b45f67294a4b0b5e20f9c663c62174a7d6",
-                "reference": "db50a8b45f67294a4b0b5e20f9c663c62174a7d6",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/7eb7036dcb8b965ba0b93c8aca7ebaeb8444bbde",
+                "reference": "7eb7036dcb8b965ba0b93c8aca7ebaeb8444bbde",
                 "shasum": ""
             },
             "require": {
@@ -3144,7 +3145,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-12 06:20:42"
+            "time": "2015-05-14 17:42:48"
         },
         {
             "name": "symfony/process",
@@ -3657,6 +3658,54 @@
                 "environment"
             ],
             "time": "2015-02-19 20:37:05"
+        },
+        {
+            "name": "watson/rememberable",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dwightwatson/rememberable.git",
+                "reference": "dd3d188c1f66c4f73f736a61dad8e8a364e40122"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dwightwatson/rememberable/zipball/dd3d188c1f66c4f73f736a61dad8e8a364e40122",
+                "reference": "dd3d188c1f66c4f73f736a61dad8e8a364e40122",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.0",
+                "illuminate/support": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Watson\\Rememberable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dwight Watson",
+                    "email": "dwight@studiousapp.com"
+                }
+            ],
+            "description": "Query caching for Laravel 5",
+            "keywords": [
+                "caching",
+                "eloquent",
+                "laravel",
+                "remember"
+            ],
+            "time": "2015-04-21 01:07:16"
         }
     ],
     "packages-dev": [
