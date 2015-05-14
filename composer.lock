@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "76b9e918b975a2fe15d6ed6957ace094",
+    "hash": "50dd34839dd6a2648d42663b53e7b8d7",
     "packages": [
         {
             "name": "anahkiasen/former",
@@ -466,12 +466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-admin.git",
-                "reference": "63b23bab6e3fc6ee3476e02d4aa86616a2f5c68e"
+                "reference": "43c762e8a4a62249c6ce81466751ee22b0bf227e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/63b23bab6e3fc6ee3476e02d4aa86616a2f5c68e",
-                "reference": "63b23bab6e3fc6ee3476e02d4aa86616a2f5c68e",
+                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/43c762e8a4a62249c6ce81466751ee22b0bf227e",
+                "reference": "43c762e8a4a62249c6ce81466751ee22b0bf227e",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +494,7 @@
                 "source": "https://github.com/Cysha/pxcms-admin/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-admin/issues"
             },
-            "time": "2015-05-12 09:32:35"
+            "time": "2015-05-13 21:59:44"
         },
         {
             "name": "cysha/pxcms-adminlte",
@@ -540,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-auth.git",
-                "reference": "4f32a7790db8a1b4a14d45a55428f9327b938079"
+                "reference": "2a12d1bc61468ec47d4a5fde143070177ab61b6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/4f32a7790db8a1b4a14d45a55428f9327b938079",
-                "reference": "4f32a7790db8a1b4a14d45a55428f9327b938079",
+                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/2a12d1bc61468ec47d4a5fde143070177ab61b6c",
+                "reference": "2a12d1bc61468ec47d4a5fde143070177ab61b6c",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +568,7 @@
                 "source": "https://github.com/Cysha/pxcms-auth/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-auth/issues"
             },
-            "time": "2015-05-11 14:33:11"
+            "time": "2015-05-13 22:49:28"
         },
         {
             "name": "cysha/pxcms-core",
@@ -576,12 +576,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "a78856382d924e68179479170e03d318a752add6"
+                "reference": "9fc70f6a2c7ff3d3a2a72295386621f5a6207606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/a78856382d924e68179479170e03d318a752add6",
-                "reference": "a78856382d924e68179479170e03d318a752add6",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/9fc70f6a2c7ff3d3a2a72295386621f5a6207606",
+                "reference": "9fc70f6a2c7ff3d3a2a72295386621f5a6207606",
                 "shasum": ""
             },
             "require": {
@@ -608,7 +608,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-12 10:17:01"
+            "time": "2015-05-13 15:33:19"
         },
         {
             "name": "cysha/pxcms-default",
@@ -616,12 +616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default.git",
-                "reference": "53e558f3fda3e8d49662468dfec358f0eb368088"
+                "reference": "a654c54a1ea4482bba9128f4f340758cf7a38db8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/53e558f3fda3e8d49662468dfec358f0eb368088",
-                "reference": "53e558f3fda3e8d49662468dfec358f0eb368088",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/a654c54a1ea4482bba9128f4f340758cf7a38db8",
+                "reference": "a654c54a1ea4482bba9128f4f340758cf7a38db8",
                 "shasum": ""
             },
             "require": {
@@ -642,7 +642,7 @@
                 "source": "https://github.com/Cysha/pxcms-default/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default/issues"
             },
-            "time": "2015-05-11 18:24:45"
+            "time": "2015-05-13 21:58:49"
         },
         {
             "name": "cysha/pxcms-default-admin",
@@ -650,12 +650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default-admin.git",
-                "reference": "633af5f4a9a6d76f4590be4cc3a075a311f135c2"
+                "reference": "6eb716b4db75a0ab7e20f684ad04b481ebf9285c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default-admin/zipball/633af5f4a9a6d76f4590be4cc3a075a311f135c2",
-                "reference": "633af5f4a9a6d76f4590be4cc3a075a311f135c2",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default-admin/zipball/6eb716b4db75a0ab7e20f684ad04b481ebf9285c",
+                "reference": "6eb716b4db75a0ab7e20f684ad04b481ebf9285c",
                 "shasum": ""
             },
             "require": {
@@ -676,7 +676,7 @@
                 "source": "https://github.com/Cysha/pxcms-default-admin/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default-admin/issues"
             },
-            "time": "2015-05-11 18:24:18"
+            "time": "2015-05-13 21:58:35"
         },
         {
             "name": "danielstjules/stringy",
@@ -773,12 +773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "b5202eb9e83f8db52e0e58867e0a46e63be8332e"
+                "reference": "c8927ad70c6fce36b3af52c17ed996c9aa4de89b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b5202eb9e83f8db52e0e58867e0a46e63be8332e",
-                "reference": "b5202eb9e83f8db52e0e58867e0a46e63be8332e",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c8927ad70c6fce36b3af52c17ed996c9aa4de89b",
+                "reference": "c8927ad70c6fce36b3af52c17ed996c9aa4de89b",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +833,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2014-12-23 22:40:37"
+            "time": "2015-05-13 13:47:35"
         },
         {
             "name": "doctrine/cache",
@@ -841,12 +841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2"
+                "reference": "9930e3367777a8727e229f5126c5299890d700bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2",
-                "reference": "c2ab51e8f3c4a8170ca91b702e3789881dd2a6c2",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/9930e3367777a8727e229f5126c5299890d700bb",
+                "reference": "9930e3367777a8727e229f5126c5299890d700bb",
                 "shasum": ""
             },
             "require": {
@@ -903,7 +903,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-05-07 20:41:18"
+            "time": "2015-05-13 10:08:10"
         },
         {
             "name": "doctrine/collections",
@@ -1784,12 +1784,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9f9d7f8a31580fbe571ee35eda9091582dd3dbad"
+                "reference": "65dbdb37e1010a83d0f87ea82583013d384851a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9f9d7f8a31580fbe571ee35eda9091582dd3dbad",
-                "reference": "9f9d7f8a31580fbe571ee35eda9091582dd3dbad",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/65dbdb37e1010a83d0f87ea82583013d384851a2",
+                "reference": "65dbdb37e1010a83d0f87ea82583013d384851a2",
                 "shasum": ""
             },
             "require": {
@@ -1902,7 +1902,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-05-12 10:23:27"
+            "time": "2015-05-13 14:45:42"
         },
         {
             "name": "laravel/socialite",
@@ -2014,12 +2014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "1a6814fa9d7197fb9f35e8657264a45904cabc1b"
+                "reference": "166a16f7e966d5eac46fb7a9849db21734718495"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/1a6814fa9d7197fb9f35e8657264a45904cabc1b",
-                "reference": "1a6814fa9d7197fb9f35e8657264a45904cabc1b",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/166a16f7e966d5eac46fb7a9849db21734718495",
+                "reference": "166a16f7e966d5eac46fb7a9849db21734718495",
                 "shasum": ""
             },
             "require": {
@@ -2090,7 +2090,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-04-29 12:07:30"
+            "time": "2015-05-13 16:20:53"
         },
         {
             "name": "league/oauth1-client",
@@ -2478,12 +2478,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/modules.git",
-                "reference": "1eaf2722efb718e4eae311fe2811840a6a61f5ae"
+                "reference": "c5bbf710e0699f4711829b89d915f97ec7901a5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/1eaf2722efb718e4eae311fe2811840a6a61f5ae",
-                "reference": "1eaf2722efb718e4eae311fe2811840a6a61f5ae",
+                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/c5bbf710e0699f4711829b89d915f97ec7901a5a",
+                "reference": "c5bbf710e0699f4711829b89d915f97ec7901a5a",
                 "shasum": ""
             },
             "require": {
@@ -2526,7 +2526,7 @@
                 "modules",
                 "pingpong"
             ],
-            "time": "2015-05-09 17:23:25"
+            "time": "2015-05-12 15:17:05"
         },
         {
             "name": "psr/log",
@@ -2863,12 +2863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "aced82e3cd15d40e5fadebec5dae9fb1ae666596"
+                "reference": "8766cebf28beac9a45b511d7dba053da9d35eb9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/aced82e3cd15d40e5fadebec5dae9fb1ae666596",
-                "reference": "aced82e3cd15d40e5fadebec5dae9fb1ae666596",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/8766cebf28beac9a45b511d7dba053da9d35eb9f",
+                "reference": "8766cebf28beac9a45b511d7dba053da9d35eb9f",
                 "shasum": ""
             },
             "require": {
@@ -2903,17 +2903,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony EventDispatcher Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-05-05 20:46:18"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-12 15:16:46"
         },
         {
             "name": "symfony/filesystem",
@@ -2921,12 +2921,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "41b7d35d812653a54fd931a6c8cf139767a95abb"
+                "reference": "6c4f6245440b53e55d4b5d3c3bd98532d6c6e11e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/41b7d35d812653a54fd931a6c8cf139767a95abb",
-                "reference": "41b7d35d812653a54fd931a6c8cf139767a95abb",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/6c4f6245440b53e55d4b5d3c3bd98532d6c6e11e",
+                "reference": "6c4f6245440b53e55d4b5d3c3bd98532d6c6e11e",
                 "shasum": ""
             },
             "require": {
@@ -2952,17 +2952,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Filesystem Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-24 07:03:44"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-12 15:16:46"
         },
         {
             "name": "symfony/finder",
@@ -3075,12 +3075,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "fa6b88720a105873e498483d36a36f34d5427db2"
+                "reference": "db50a8b45f67294a4b0b5e20f9c663c62174a7d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/fa6b88720a105873e498483d36a36f34d5427db2",
-                "reference": "fa6b88720a105873e498483d36a36f34d5427db2",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/db50a8b45f67294a4b0b5e20f9c663c62174a7d6",
+                "reference": "db50a8b45f67294a4b0b5e20f9c663c62174a7d6",
                 "shasum": ""
             },
             "require": {
@@ -3144,7 +3144,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-11 02:25:53"
+            "time": "2015-05-12 06:20:42"
         },
         {
             "name": "symfony/process",
@@ -3272,12 +3272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-core.git",
-                "reference": "d25c17db741f58c0f615e52006a47f6fb23cd9b3"
+                "reference": "b822fe7b4528ba74555af0e1ec53a1988f124691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-core/zipball/d25c17db741f58c0f615e52006a47f6fb23cd9b3",
-                "reference": "d25c17db741f58c0f615e52006a47f6fb23cd9b3",
+                "url": "https://api.github.com/repos/symfony/security-core/zipball/b822fe7b4528ba74555af0e1ec53a1988f124691",
+                "reference": "b822fe7b4528ba74555af0e1ec53a1988f124691",
                 "shasum": ""
             },
             "require": {
@@ -3317,17 +3317,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Security Component - Core Library",
-            "homepage": "http://symfony.com",
-            "time": "2015-03-30 15:54:10"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-13 11:33:56"
         },
         {
             "name": "symfony/translation",
@@ -3720,12 +3720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "cd3fe91baa28da6e119d619612439eb2db0d8d88"
+                "reference": "b70d22758c0813ea5fef9c22480caadd3a2b6a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/cd3fe91baa28da6e119d619612439eb2db0d8d88",
-                "reference": "cd3fe91baa28da6e119d619612439eb2db0d8d88",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/b70d22758c0813ea5fef9c22480caadd3a2b6a56",
+                "reference": "b70d22758c0813ea5fef9c22480caadd3a2b6a56",
                 "shasum": ""
             },
             "require": {
@@ -3766,7 +3766,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2015-05-10 22:20:19"
+            "time": "2015-05-13 13:33:36"
         },
         {
             "name": "maximebf/debugbar",
@@ -4795,12 +4795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f"
+                "reference": "2396832f6f9ab2b8f62f00b5d3f2e722fc773d65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f",
-                "reference": "4ededb1d00dc2c65fcd16ae3dafc785f92b3f95f",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/2396832f6f9ab2b8f62f00b5d3f2e722fc773d65",
+                "reference": "2396832f6f9ab2b8f62f00b5d3f2e722fc773d65",
                 "shasum": ""
             },
             "require": {
@@ -4826,17 +4826,17 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com",
-            "time": "2015-04-24 07:03:44"
+            "homepage": "https://symfony.com",
+            "time": "2015-05-12 15:16:46"
         }
     ],
     "aliases": [],
