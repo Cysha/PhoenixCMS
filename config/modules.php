@@ -10,8 +10,7 @@ return [
     | Default module namespace.
     |
     */
-
-    'namespace' => 'Cms\\Modules',
+    'namespace' => 'Cms\Modules',
 
     /*
     |--------------------------------------------------------------------------
@@ -21,7 +20,6 @@ return [
     | Default module stubs.
     |
     */
-
     'stubs' => [
         'enabled' => false,
         'path' => base_path() . '/vendor/pingpong/modules/src/Pingpong/Modules/Commands/stubs',

@@ -36,7 +36,7 @@ return array(
     |
     */
 
-    'layoutDefault' => 'basic',
+    'layoutDefault' => 'default',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return array(
     */
 
     'namespaces' => array(
-        'widget' => 'Cms\Widgets'
+        'widget' => 'App\Widgets'
     ),
 
     /*
