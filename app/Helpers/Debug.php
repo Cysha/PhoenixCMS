@@ -60,7 +60,7 @@ class Debug
 
     public static function console($var)
     {
-        \DebugBar::addMessage($var);
+        \Debugbar::addMessage($var);
     }
 
 }
