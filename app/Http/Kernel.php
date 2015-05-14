@@ -17,6 +17,7 @@ class Kernel extends HttpKernel
         'Illuminate\View\Middleware\ShareErrorsFromSession',
         'Cms\Http\Middleware\VerifyCsrfToken',
         'Cms\Http\Middleware\IsInstalledMiddleware',
+        'Cms\Modules\Auth\Http\Middleware\LockMiddleware',
     ];
 
     /**
