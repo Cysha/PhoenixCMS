@@ -60,6 +60,9 @@ class Debug
 
     public static function console($var)
     {
+        if (!class_exists('Debugbar')) {
+            return;
+        }
         \Debugbar::addMessage($var);
     }
 
