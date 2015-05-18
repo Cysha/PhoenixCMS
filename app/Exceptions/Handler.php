@@ -37,12 +37,16 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if (config('app.debug') && class_exists('\Whoops\Run')) {
-            return $this->renderExceptionWithWhoops($e);
-        }
-
         if ($e instanceof \Cms\Modules\Core\Exceptions\NotInstalledException) {
             return $this->renderNotInstalled($e);
+        }
+
+        if ($e instanceof \Cms\Modules\Core\Exceptions\InMaintenanceException) {
+            return $this->renderInMaintenance($e);
+        }
+
+        if (config('app.debug') && class_exists('\Whoops\Run')) {
+            return $this->renderExceptionWithWhoops($e);
         }
 
         if ($e instanceof \PDOException) {
@@ -99,6 +103,17 @@ class Handler extends ExceptionHandler
     protected function renderNotInstalled(Exception $e)
     {
         die(view('notInstalled'));
+    }
+
+    /**
+     * Render an exception for inMaintenance.
+     *
+     * @param  \Exception $e
+     * @return \Illuminate\Http\Response
+     */
+    protected function renderInMaintenance(Exception $e)
+    {
+        die(view('inMaintenance'));
     }
 
     /**
