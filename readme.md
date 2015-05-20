@@ -30,7 +30,8 @@ The CMS is fully customizable from themes and modules to language packs, documen
 If you encounter problems with using the CMS, keeping in mind that it isn't a full release yet, please post on an issue on the repository.
 Module specific issues would be better posted to the correct module to keep tracking easier. Pull requests are welcome. 
 
-## Awesome People Thanks to the people that have contributed and helped test/find bugs in the project: 
+## Awesome People 
+Thanks to the people that have contributed and helped test/find bugs in the project: 
 - [Daniel Aldridge](https://github.com/xLink) 
 - [Daniel Noel-Davies](https://github.com/NoelDavies) 
 - [Richard Clifford](https://github.com/richard-clifford) 
@@ -39,6 +40,5 @@ Module specific issues would be better posted to the correct module to keep trac
 - [Daniel Selley](https://github.com/danselley) 
 
 ## License Copyright (c) 2013 Cysha 
-
 PXCMS is licensed under the [MIT LICENSE](http://opensource.org/licenses/MIT).
 
