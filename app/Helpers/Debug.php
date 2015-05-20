@@ -23,12 +23,12 @@ class Debug
         // actually do the debug & grab it in some output buffering
         ob_start();
         (new Dumper)->dump($var);
-        $debug = ob_get_clean();
+        $debugVar = ob_get_clean();
 
         // if we happen to be running in the console
         if (app()->runningInConsole()) {
             // return the debug without any extras
-            return $debug;
+            return $debugVar;
         }
         // otherwise
 
@@ -59,7 +59,7 @@ class Debug
             $return .= '</div>';
 
 
-        $return .= $debug.'</div>';
+        $return .= $debugVar.'</div>';
 
         // BOOM! :D
         return $return;
