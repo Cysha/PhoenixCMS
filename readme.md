@@ -1,4 +1,5 @@
-# Phoenix CMS [Phoenix CMS](http://phoenixcms.org/) (PXCMS) is a powerful open source, modular content management system. 
+# Phoenix CMS 
+[Phoenix CMS](http://phoenixcms.org/) (PXCMS) is a powerful open source, modular content management system. 
 
 ## Requirements 
 * Laravel 5 (For L4.2 checkout the [v0.1](https://github.com/Cysha/PhoenixCMS/releases/tag/v0.1) tag) 
@@ -37,5 +38,7 @@ Module specific issues would be better posted to the correct module to keep trac
 - [Infy](https://github.com/infyhr)
 - [Daniel Selley](https://github.com/danselley) 
 
-## License Copyright (c) 2013 Cysha PXCMS is licensed under the [MIT LICENSE](http://opensource.org/licenses/MIT).
+## License Copyright (c) 2013 Cysha 
+
+PXCMS is licensed under the [MIT LICENSE](http://opensource.org/licenses/MIT).
 
