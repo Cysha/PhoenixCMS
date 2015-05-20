@@ -20,6 +20,18 @@ class Debug
     {
         if (!in_Array(app()->environment(), array('dev', 'local'))){ return; }
 
+        // actually do the debug & grab it in some output buffering
+        ob_start();
+        (new Dumper)->dump($var);
+        $debug = ob_get_clean();
+
+        // if we happen to be running in the console
+        if (app()->runningInConsole()) {
+            // return the debug without any extras
+            return $debug;
+        }
+        // otherwise
+
         // get where this is being called from
         $debug     = debug_backtrace();
         $call_info = array_shift($debug);
@@ -46,11 +58,6 @@ class Debug
             }
             $return .= '</div>';
 
-        // actually do the debug & grab it in some output buffering
-        ob_start();
-        (new Dumper)->dump($var);
-        $debug = ob_get_contents();
-        ob_end_clean();
 
         $return .= $debug.'</div>';
 
