@@ -466,12 +466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-admin.git",
-                "reference": "35ccf285cfbc6a3b15398d283d5a71ac693df271"
+                "reference": "33262c1a81255275c52b017a14e3066b612f79d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/35ccf285cfbc6a3b15398d283d5a71ac693df271",
-                "reference": "35ccf285cfbc6a3b15398d283d5a71ac693df271",
+                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/33262c1a81255275c52b017a14e3066b612f79d3",
+                "reference": "33262c1a81255275c52b017a14e3066b612f79d3",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +494,7 @@
                 "source": "https://github.com/Cysha/pxcms-admin/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-admin/issues"
             },
-            "time": "2015-05-23 16:17:27"
+            "time": "2015-05-24 21:11:20"
         },
         {
             "name": "cysha/pxcms-adminlte",
@@ -502,12 +502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-adminlte.git",
-                "reference": "64e7ea608d1f2a68a397359a46fd1ca2aae7ae35"
+                "reference": "0aa1506639b72f23cd857acf30722b81195e3a6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-adminlte/zipball/64e7ea608d1f2a68a397359a46fd1ca2aae7ae35",
-                "reference": "64e7ea608d1f2a68a397359a46fd1ca2aae7ae35",
+                "url": "https://api.github.com/repos/Cysha/pxcms-adminlte/zipball/0aa1506639b72f23cd857acf30722b81195e3a6d",
+                "reference": "0aa1506639b72f23cd857acf30722b81195e3a6d",
                 "shasum": ""
             },
             "require": {
@@ -532,7 +532,7 @@
                 "source": "https://github.com/Cysha/pxcms-adminlte/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-adminlte/issues"
             },
-            "time": "2015-05-24 09:45:13"
+            "time": "2015-05-24 21:18:51"
         },
         {
             "name": "cysha/pxcms-auth",
@@ -540,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-auth.git",
-                "reference": "0d5580d81e689922f7ccf37672fc3f4fc6f4be36"
+                "reference": "0ac58129ababae3d8e383dcfac1476e1d03c6ac8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/0d5580d81e689922f7ccf37672fc3f4fc6f4be36",
-                "reference": "0d5580d81e689922f7ccf37672fc3f4fc6f4be36",
+                "url": "https://api.github.com/repos/Cysha/pxcms-auth/zipball/0ac58129ababae3d8e383dcfac1476e1d03c6ac8",
+                "reference": "0ac58129ababae3d8e383dcfac1476e1d03c6ac8",
                 "shasum": ""
             },
             "require": {
@@ -567,7 +567,7 @@
                 "source": "https://github.com/Cysha/pxcms-auth/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-auth/issues"
             },
-            "time": "2015-05-21 15:54:43"
+            "time": "2015-05-25 16:18:17"
         },
         {
             "name": "cysha/pxcms-core",
@@ -575,12 +575,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "cccae04d2c73e3426dc23aa4b4b34fe925b95668"
+                "reference": "3eb68d705926904424fd6f95051cf211765082fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/cccae04d2c73e3426dc23aa4b4b34fe925b95668",
-                "reference": "cccae04d2c73e3426dc23aa4b4b34fe925b95668",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/3eb68d705926904424fd6f95051cf211765082fb",
+                "reference": "3eb68d705926904424fd6f95051cf211765082fb",
                 "shasum": ""
             },
             "require": {
@@ -609,7 +609,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-05-24 09:46:18"
+            "time": "2015-05-25 16:02:02"
         },
         {
             "name": "cysha/pxcms-default",
@@ -617,12 +617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default.git",
-                "reference": "095cf91d325de119c7cbc023fe0b69b1422a2e93"
+                "reference": "a1e71e2ae9cf62a00577091488b224c7ea17b4df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/095cf91d325de119c7cbc023fe0b69b1422a2e93",
-                "reference": "095cf91d325de119c7cbc023fe0b69b1422a2e93",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default/zipball/a1e71e2ae9cf62a00577091488b224c7ea17b4df",
+                "reference": "a1e71e2ae9cf62a00577091488b224c7ea17b4df",
                 "shasum": ""
             },
             "require": {
@@ -643,7 +643,7 @@
                 "source": "https://github.com/Cysha/pxcms-default/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default/issues"
             },
-            "time": "2015-05-24 09:45:47"
+            "time": "2015-05-24 11:38:49"
         },
         {
             "name": "cysha/pxcms-default-admin",
@@ -651,12 +651,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-default-admin.git",
-                "reference": "966403cb9361f9a6ed9a2a5a38da47e4585a1b57"
+                "reference": "6d7b03af0d18481111c99223b59c6512da59b45a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-default-admin/zipball/966403cb9361f9a6ed9a2a5a38da47e4585a1b57",
-                "reference": "966403cb9361f9a6ed9a2a5a38da47e4585a1b57",
+                "url": "https://api.github.com/repos/Cysha/pxcms-default-admin/zipball/6d7b03af0d18481111c99223b59c6512da59b45a",
+                "reference": "6d7b03af0d18481111c99223b59c6512da59b45a",
                 "shasum": ""
             },
             "require": {
@@ -677,7 +677,7 @@
                 "source": "https://github.com/Cysha/pxcms-default-admin/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-default-admin/issues"
             },
-            "time": "2015-05-24 09:45:34"
+            "time": "2015-05-24 15:01:33"
         },
         {
             "name": "danielstjules/stringy",
@@ -3760,12 +3760,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "94945bb36e910646fd74740348a762bcaceb70d4"
+                "reference": "d9abfd11beccb5d5c77262e1b26df7e318b4cdba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/94945bb36e910646fd74740348a762bcaceb70d4",
-                "reference": "94945bb36e910646fd74740348a762bcaceb70d4",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/d9abfd11beccb5d5c77262e1b26df7e318b4cdba",
+                "reference": "d9abfd11beccb5d5c77262e1b26df7e318b4cdba",
                 "shasum": ""
             },
             "require": {
@@ -3806,7 +3806,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2015-05-03 13:59:38"
+            "time": "2015-05-25 14:13:48"
         },
         {
             "name": "doctrine/instantiator",
@@ -4145,12 +4145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "9ef4b8cbf3e839a44a9b375d8c59e109ac7aa020"
+                "reference": "855a7d197f35ebd59708d0e08d9852670185190f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9ef4b8cbf3e839a44a9b375d8c59e109ac7aa020",
-                "reference": "9ef4b8cbf3e839a44a9b375d8c59e109ac7aa020",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/855a7d197f35ebd59708d0e08d9852670185190f",
+                "reference": "855a7d197f35ebd59708d0e08d9852670185190f",
                 "shasum": ""
             },
             "require": {
@@ -4199,7 +4199,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-05-09 04:40:58"
+            "time": "2015-05-25 12:56:57"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4391,12 +4391,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "77340ed950e26337cff024dea1669a00f43df5f6"
+                "reference": "49c2007b90b8a619e2057785e8fbc331b7b760ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/77340ed950e26337cff024dea1669a00f43df5f6",
-                "reference": "77340ed950e26337cff024dea1669a00f43df5f6",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/49c2007b90b8a619e2057785e8fbc331b7b760ff",
+                "reference": "49c2007b90b8a619e2057785e8fbc331b7b760ff",
                 "shasum": ""
             },
             "require": {
@@ -4455,7 +4455,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-05-22 00:06:43"
+            "time": "2015-05-25 03:53:30"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
