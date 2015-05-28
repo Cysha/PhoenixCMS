@@ -1,29 +1,41 @@
 <?php namespace Cms\Console;
 
+use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
-class Kernel extends ConsoleKernel {
+class Kernel extends ConsoleKernel
+{
+    /**
+     * The Artisan commands provided by your application.
+     *
+     * @var array
+     */
+    protected $commands = [
+    ];
 
-	/**
-	 * The Artisan commands provided by your application.
-	 *
-	 * @var array
-	 */
-	protected $commands = [
-		'Cms\Console\Commands\Inspire',
-	];
+    /**
+     * Define the application's command schedule.
+     *
+     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @return void
+     */
+    protected function schedule(Schedule $schedule)
+    {
+        if (!count(app('modules')->enabled())) {
+            return;
+        }
 
-	/**
-	 * Define the application's command schedule.
-	 *
-	 * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
-	 * @return void
-	 */
-	protected function schedule(Schedule $schedule)
-	{
-		$schedule->command('inspire')
-				 ->hourly();
-	}
+        foreach (app('modules')->getOrdered() as $module) {
+            $class = sprintf('\Cms\Modules\%s\Console\Kernel', ucwords($module));
+            if (!class_exists($class)) {
+                continue;
+            }
+
+            with(new $class($this->app, $this->app['events']))->schedule($schedule);
+        }
+
+    }
 
 }
