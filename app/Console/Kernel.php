@@ -28,6 +28,10 @@ class Kernel extends ConsoleKernel
         }
 
         foreach (app('modules')->getOrdered() as $module) {
+            if (!$module->enabled()) {
+                return;
+            }
+            
             $class = sprintf('\Cms\Modules\%s\Console\Kernel', ucwords($module));
             if (!class_exists($class)) {
                 continue;
