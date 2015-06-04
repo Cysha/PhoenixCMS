@@ -17,7 +17,12 @@
 
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master",
-        "cysha/pxcms-admin"                 : "dev-master"
+        "cysha/pxcms-admin"                 : "dev-master",
+        "cysha/pxcms-social"                : "dev-master",
+
+        "cysha/pxcms-docs"                  : "dev-master",
+        "bugsnag/bugsnag-laravel": "1.*",
+        "socialiteproviders/spotify": "dev-master"
 
     },
     "require-dev": {

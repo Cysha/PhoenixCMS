@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "72dd33708c6a01f130a5d6e74cb8a090",
+    "hash": "2bc173ddf0c95c1134ff968233833cfd",
     "packages": [
         {
             "name": "anahkiasen/former",
@@ -262,6 +262,101 @@
             "time": "2015-06-04 13:17:12"
         },
         {
+            "name": "bugsnag/bugsnag",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-php.git",
+                "reference": "aa6ab28bffdf9cd9d0ba68acc5944f924d7fa421"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/aa6ab28bffdf9cd9d0ba68acc5944f924d7fa421",
+                "reference": "aa6ab28bffdf9cd9d0ba68acc5944f924d7fa421",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Bugsnag_": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com",
+                    "homepage": "https://bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for PHP applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-php",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "logging",
+                "tracking"
+            ],
+            "time": "2015-05-29 00:58:28"
+        },
+        {
+            "name": "bugsnag/bugsnag-laravel",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-laravel.git",
+                "reference": "0b336de4a4f8198615c2cdc299cb2ed9cefdd0d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-laravel/zipball/0b336de4a4f8198615c2cdc299cb2ed9cefdd0d4",
+                "reference": "0b336de4a4f8198615c2cdc299cb2ed9cefdd0d4",
+                "shasum": ""
+            },
+            "require": {
+                "bugsnag/bugsnag": ">=2.5.0",
+                "illuminate/support": "4.*|5.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Bugsnag\\BugsnagLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for Laravel applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-laravel",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "laravel",
+                "logging",
+                "tracking"
+            ],
+            "time": "2015-05-29 01:37:51"
+        },
+        {
             "name": "chumper/datatable",
             "version": "dev-develop",
             "source": {
@@ -466,12 +561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-admin.git",
-                "reference": "fed9db2d73e33e13dbcec7bae1568e301432704c"
+                "reference": "5c0c088e03dda61b6ba54cd15b3fbb94eb8efb61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/fed9db2d73e33e13dbcec7bae1568e301432704c",
-                "reference": "fed9db2d73e33e13dbcec7bae1568e301432704c",
+                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/5c0c088e03dda61b6ba54cd15b3fbb94eb8efb61",
+                "reference": "5c0c088e03dda61b6ba54cd15b3fbb94eb8efb61",
                 "shasum": ""
             },
             "require": {
@@ -490,11 +585,7 @@
                 }
             ],
             "description": "Admin Module for Phoenix CMS v1",
-            "support": {
-                "source": "https://github.com/Cysha/pxcms-admin/tree/master",
-                "issues": "https://github.com/Cysha/pxcms-admin/issues"
-            },
-            "time": "2015-06-02 13:51:12"
+            "time": "2015-06-04 16:31:26"
         },
         {
             "name": "cysha/pxcms-adminlte",
@@ -563,10 +654,6 @@
                 }
             ],
             "description": "Authentication Module for Phoenix CMS v1",
-            "support": {
-                "source": "https://github.com/Cysha/pxcms-auth/tree/master",
-                "issues": "https://github.com/Cysha/pxcms-auth/issues"
-            },
             "time": "2015-06-04 11:05:26"
         },
         {
@@ -605,10 +692,6 @@
                 }
             ],
             "description": "Core Module for Phoenix CMS v1",
-            "support": {
-                "source": "https://github.com/Cysha/pxcms-core/tree/master",
-                "issues": "https://github.com/Cysha/pxcms-core/issues"
-            },
             "time": "2015-06-04 11:06:47"
         },
         {
@@ -639,10 +722,6 @@
                 }
             ],
             "description": "Default Theme for Phoenix CMS",
-            "support": {
-                "source": "https://github.com/Cysha/pxcms-default/tree/master",
-                "issues": "https://github.com/Cysha/pxcms-default/issues"
-            },
             "time": "2015-06-03 13:03:59"
         },
         {
@@ -678,6 +757,78 @@
                 "issues": "https://github.com/Cysha/pxcms-default-admin/issues"
             },
             "time": "2015-05-24 15:01:33"
+        },
+        {
+            "name": "cysha/pxcms-docs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cysha/pxcms-docs.git",
+                "reference": "3cd1bb10a0edc7ad6c9e59a13f2753df0feb815c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cysha/pxcms-docs/zipball/3cd1bb10a0edc7ad6c9e59a13f2753df0feb815c",
+                "reference": "3cd1bb10a0edc7ad6c9e59a13f2753df0feb815c",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "dev-master",
+                "erusev/parsedown-extra": "0.7.*",
+                "league/commonmark": "0.9.*@dev",
+                "symfony/browser-kit": "~2.3"
+            },
+            "type": "pxcms-module",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "xLink",
+                    "email": "xLink@cybershade.org"
+                }
+            ],
+            "description": "Documentation Module for Phoenix CMS",
+            "support": {
+                "source": "https://github.com/Cysha/pxcms-docs/tree/master",
+                "issues": "https://github.com/Cysha/pxcms-docs/issues"
+            },
+            "time": "2015-05-27 12:47:25"
+        },
+        {
+            "name": "cysha/pxcms-social",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Cysha/pxcms-social.git",
+                "reference": "e9a985aa90be62306a8b5e3c76d94aa8978a5450"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Cysha/pxcms-social/zipball/e9a985aa90be62306a8b5e3c76d94aa8978a5450",
+                "reference": "e9a985aa90be62306a8b5e3c76d94aa8978a5450",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "dev-master",
+                "laravel/socialite": "~2.0"
+            },
+            "type": "pxcms-module",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "xLink",
+                    "email": "xLink@cybershade.org"
+                }
+            ],
+            "description": "Social Auth Module for Phoenix CMS v1",
+            "support": {
+                "source": "https://github.com/Cysha/pxcms-social/tree/master",
+                "issues": "https://github.com/Cysha/pxcms-social/issues"
+            },
+            "time": "2015-06-04 13:38:44"
         },
         {
             "name": "danielstjules/stringy",
@@ -1490,6 +1641,101 @@
             "time": "2015-05-29 15:12:07"
         },
         {
+            "name": "guzzle/guzzle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle3.git",
+                "reference": "b3f5050cb6270c7a728a0b74ac2de50a262b3e02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/b3f5050cb6270c7a728a0b74ac2de50a262b3e02",
+                "reference": "b3f5050cb6270c7a728a0b74ac2de50a262b3e02",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3.3",
+                "symfony/event-dispatcher": "~2.1"
+            },
+            "replace": {
+                "guzzle/batch": "self.version",
+                "guzzle/cache": "self.version",
+                "guzzle/common": "self.version",
+                "guzzle/http": "self.version",
+                "guzzle/inflection": "self.version",
+                "guzzle/iterator": "self.version",
+                "guzzle/log": "self.version",
+                "guzzle/parser": "self.version",
+                "guzzle/plugin": "self.version",
+                "guzzle/plugin-async": "self.version",
+                "guzzle/plugin-backoff": "self.version",
+                "guzzle/plugin-cache": "self.version",
+                "guzzle/plugin-cookie": "self.version",
+                "guzzle/plugin-curlauth": "self.version",
+                "guzzle/plugin-error-response": "self.version",
+                "guzzle/plugin-history": "self.version",
+                "guzzle/plugin-log": "self.version",
+                "guzzle/plugin-md5": "self.version",
+                "guzzle/plugin-mock": "self.version",
+                "guzzle/plugin-oauth": "self.version",
+                "guzzle/service": "self.version",
+                "guzzle/stream": "self.version"
+            },
+            "require-dev": {
+                "doctrine/cache": "~1.3",
+                "monolog/monolog": "~1.0",
+                "phpunit/phpunit": "3.7.*",
+                "psr/log": "~1.0",
+                "symfony/class-loader": "~2.1",
+                "zendframework/zend-cache": "2.*,<2.3",
+                "zendframework/zend-log": "2.*,<2.3"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Guzzle 5 has moved to a new package name. The package you have installed, Guzzle 3, is deprecated."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Guzzle": "src/",
+                    "Guzzle\\Tests": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Guzzle Community",
+                    "homepage": "https://github.com/guzzle/guzzle/contributors"
+                }
+            ],
+            "description": "PHP HTTP client. This library is deprecated in favor of https://packagist.org/packages/guzzlehttp/guzzle",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-04-29 17:06:53"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "5.x-dev",
             "source": {
@@ -1792,12 +2038,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "e4c6524b57a297fe3255ca123529b5365f3a33eb"
+                "reference": "3e60c762741afd71c78f76ae00d8c8c03f3e396c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/e4c6524b57a297fe3255ca123529b5365f3a33eb",
-                "reference": "e4c6524b57a297fe3255ca123529b5365f3a33eb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3e60c762741afd71c78f76ae00d8c8c03f3e396c",
+                "reference": "3e60c762741afd71c78f76ae00d8c8c03f3e396c",
                 "shasum": ""
             },
             "require": {
@@ -1912,7 +2158,61 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-06-04 13:17:58"
+            "time": "2015-06-04 17:51:43"
+        },
+        {
+            "name": "laravel/socialite",
+            "version": "2.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/socialite.git",
+                "reference": "15f36da073454d630bac20afef815aa9cfa4cf8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/15f36da073454d630bac20afef815aa9cfa4cf8f",
+                "reference": "15f36da073454d630bac20afef815aa9cfa4cf8f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~5.0|~6.0",
+                "illuminate/contracts": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/support": "~5.0",
+                "league/oauth1-client": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Socialite\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
+            "keywords": [
+                "laravel",
+                "oauth"
+            ],
+            "time": "2015-06-03 18:14:09"
         },
         {
             "name": "laravelcollective/html",
@@ -1968,6 +2268,67 @@
                 }
             ],
             "time": "2015-05-21 16:45:14"
+        },
+        {
+            "name": "league/commonmark",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "2205386ee3ee0558241298eb9efb056b2fae0f82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/2205386ee3ee0558241298eb9efb056b2fae0f82",
+                "reference": "2205386ee3ee0558241298eb9efb056b2fae0f82",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.8"
+            },
+            "replace": {
+                "colinodell/commonmark-php": "*"
+            },
+            "require-dev": {
+                "erusev/parsedown": "~1.0",
+                "jgm/commonmark": "0.19",
+                "michelf/php-markdown": "~1.4",
+                "phpunit/phpunit": "~4.3",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "symfony/finder": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\CommonMark\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Colin O'Dell",
+                    "email": "colinodell@gmail.com",
+                    "homepage": "http://www.colinodell.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Markdown parser for PHP based on the CommonMark spec",
+            "homepage": "https://github.com/thephpleague/commonmark",
+            "keywords": [
+                "commonmark",
+                "markdown",
+                "parser"
+            ],
+            "time": "2015-05-16 12:31:42"
         },
         {
             "name": "league/flysystem",
@@ -2115,6 +2476,69 @@
                 "rest"
             ],
             "time": "2015-03-19 15:16:43"
+        },
+        {
+            "name": "league/oauth1-client",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth1-client.git",
+                "reference": "815b2dbd2b866409f3de6e4046a76e66b5af608e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/815b2dbd2b866409f3de6e4046a76e66b5af608e",
+                "reference": "815b2dbd2b866409f3de6e4046a76e66b5af608e",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/guzzle": "3.*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.7.2",
+                "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\OAuth1\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Corlett",
+                    "email": "bencorlett@me.com",
+                    "homepage": "http://www.webcomm.com.au",
+                    "role": "Developer"
+                }
+            ],
+            "description": "OAuth 1.0 Client Library",
+            "keywords": [
+                "Authentication",
+                "SSO",
+                "authorization",
+                "bitbucket",
+                "identity",
+                "idp",
+                "oauth",
+                "oauth1",
+                "single sign on",
+                "trello",
+                "tumblr",
+                "twitter"
+            ],
+            "time": "2015-05-18 00:04:43"
         },
         {
             "name": "mews/purifier",
@@ -2392,12 +2816,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/generators.git",
-                "reference": "be36f62d179148c5977600a47d9cbc75122f1823"
+                "reference": "73d3b40e2988ee10580277d2b4eabc297abd621c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/generators/zipball/be36f62d179148c5977600a47d9cbc75122f1823",
-                "reference": "be36f62d179148c5977600a47d9cbc75122f1823",
+                "url": "https://api.github.com/repos/pingpong-labs/generators/zipball/73d3b40e2988ee10580277d2b4eabc297abd621c",
+                "reference": "73d3b40e2988ee10580277d2b4eabc297abd621c",
                 "shasum": ""
             },
             "require": {
@@ -2433,7 +2857,7 @@
                 "laravel",
                 "pingpong"
             ],
-            "time": "2015-05-21 07:06:36"
+            "time": "2015-06-04 09:20:40"
         },
         {
             "name": "pingpong/modules",
@@ -2441,12 +2865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/modules.git",
-                "reference": "d71fd39a0efdca45ee9e0ebb44a75bdef0361cf3"
+                "reference": "ed8291dfd6863fcd135e3c31cbb76195c741abe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/d71fd39a0efdca45ee9e0ebb44a75bdef0361cf3",
-                "reference": "d71fd39a0efdca45ee9e0ebb44a75bdef0361cf3",
+                "url": "https://api.github.com/repos/pingpong-labs/modules/zipball/ed8291dfd6863fcd135e3c31cbb76195c741abe1",
+                "reference": "ed8291dfd6863fcd135e3c31cbb76195c741abe1",
                 "shasum": ""
             },
             "require": {
@@ -2461,12 +2885,6 @@
                 "phpunit/phpunit": "~4"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev",
-                    "dev-develop": "1.3-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Pingpong\\Modules\\": ""
@@ -2490,7 +2908,7 @@
                 "modules",
                 "pingpong"
             ],
-            "time": "2015-05-21 07:06:59"
+            "time": "2015-06-04 14:02:33"
         },
         {
             "name": "pingpong/support",
@@ -2498,12 +2916,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pingpong-labs/support.git",
-                "reference": "d5921307d28e0061bec82cc2e299ede53da95b16"
+                "reference": "797c19c99d35d95ced39e0575c1c707757493cc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pingpong-labs/support/zipball/d5921307d28e0061bec82cc2e299ede53da95b16",
-                "reference": "d5921307d28e0061bec82cc2e299ede53da95b16",
+                "url": "https://api.github.com/repos/pingpong-labs/support/zipball/797c19c99d35d95ced39e0575c1c707757493cc8",
+                "reference": "797c19c99d35d95ced39e0575c1c707757493cc8",
                 "shasum": ""
             },
             "require": {
@@ -2532,7 +2950,7 @@
                 }
             ],
             "description": "Support Component of Pingpong Sky Package",
-            "time": "2015-05-21 07:07:57"
+            "time": "2015-06-04 09:20:40"
         },
         {
             "name": "psr/log",
@@ -2696,6 +3114,85 @@
             "time": "2014-12-30 13:32:42"
         },
         {
+            "name": "socialiteproviders/manager",
+            "version": "0.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Manager.git",
+                "reference": "a9640be0ee30d7f822f4662f1a698fe053361504"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Manager/zipball/a9640be0ee30d7f822f4662f1a698fe053361504",
+                "reference": "a9640be0ee30d7f822f4662f1a698fe053361504",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.0",
+                "laravel/socialite": "~2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Manager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andy Wendt",
+                    "email": "andy@awendt.com"
+                }
+            ],
+            "description": "Easily add new or override built-in providers in Laravel Socialite.",
+            "time": "2015-05-03 14:45:51"
+        },
+        {
+            "name": "socialiteproviders/spotify",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SocialiteProviders/Spotify.git",
+                "reference": "e9dd1ebd44b76266097eedeb40f28436ae307f4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SocialiteProviders/Spotify/zipball/e9dd1ebd44b76266097eedeb40f28436ae307f4b",
+                "reference": "e9dd1ebd44b76266097eedeb40f28436ae307f4b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "socialiteproviders/manager": "0.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocialiteProviders\\Spotify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "DraperStudio",
+                    "email": "hello@draperstud.io"
+                }
+            ],
+            "description": "Spotify OAuth2 Provider for Laravel Socialite",
+            "time": "2015-03-12 12:01:06"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "5.x-dev",
             "source": {
@@ -2749,17 +3246,72 @@
             "time": "2015-06-02 14:34:12"
         },
         {
+            "name": "symfony/browser-kit",
+            "version": "2.8.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/BrowserKit.git",
+                "reference": "491639704334283b5f1d87bb3298400f1f5cd2bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/491639704334283b5f1d87bb3298400f1f5cd2bf",
+                "reference": "491639704334283b5f1d87bb3298400f1f5cd2bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/dom-crawler": "~2.0,>=2.0.5|~3.0.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "~2.0,>=2.0.5|~3.0.0",
+                "symfony/phpunit-bridge": "~2.7|~3.0.0",
+                "symfony/process": "~2.0,>=2.0.5|~3.0.0"
+            },
+            "suggest": {
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\BrowserKit\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony BrowserKit Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-05-12 15:16:46"
+        },
+        {
             "name": "symfony/console",
             "version": "2.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "7f0bec04961c61c961df0cb8c2ae88dbfd83f399"
+                "reference": "808fb9694b5550f91ceceec9bc5056079cf04e22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/7f0bec04961c61c961df0cb8c2ae88dbfd83f399",
-                "reference": "7f0bec04961c61c961df0cb8c2ae88dbfd83f399",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/808fb9694b5550f91ceceec9bc5056079cf04e22",
+                "reference": "808fb9694b5550f91ceceec9bc5056079cf04e22",
                 "shasum": ""
             },
             "require": {
@@ -2803,7 +3355,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-05-29 16:22:24"
+            "time": "2015-06-04 14:44:02"
         },
         {
             "name": "symfony/css-selector",
@@ -3447,12 +3999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "120b187ec46215f7a53a506e53aa91a81c82a082"
+                "reference": "d8d41f6b95b9d25257bbd7e68266631214f317bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/120b187ec46215f7a53a506e53aa91a81c82a082",
-                "reference": "120b187ec46215f7a53a506e53aa91a81c82a082",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/d8d41f6b95b9d25257bbd7e68266631214f317bb",
+                "reference": "d8d41f6b95b9d25257bbd7e68266631214f317bb",
                 "shasum": ""
             },
             "require": {
@@ -3498,7 +4050,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-05-02 15:21:08"
+            "time": "2015-06-04 14:40:31"
         },
         {
             "name": "teepluss/theme",
@@ -4151,12 +4703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "672248f49a25fcca46aa6c73612d6731d6b83c4a"
+                "reference": "2b2747ae77a183948250c2ea5302b396ae9749fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/672248f49a25fcca46aa6c73612d6731d6b83c4a",
-                "reference": "672248f49a25fcca46aa6c73612d6731d6b83c4a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2b2747ae77a183948250c2ea5302b396ae9749fb",
+                "reference": "2b2747ae77a183948250c2ea5302b396ae9749fb",
                 "shasum": ""
             },
             "require": {
@@ -4179,7 +4731,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -4205,7 +4757,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-05-25 16:40:23"
+            "time": "2015-06-04 07:35:25"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4949,7 +5501,10 @@
         "cysha/pxcms-adminlte": 20,
         "cysha/pxcms-core": 20,
         "cysha/pxcms-auth": 20,
-        "cysha/pxcms-admin": 20
+        "cysha/pxcms-admin": 20,
+        "cysha/pxcms-social": 20,
+        "cysha/pxcms-docs": 20,
+        "socialiteproviders/spotify": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
