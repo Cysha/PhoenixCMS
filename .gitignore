@@ -8,3 +8,5 @@ themes/
 public/themes/*/
 public/modules/*/
 database/migrations/
+!resources/lang/en/
+resources/lang/*
