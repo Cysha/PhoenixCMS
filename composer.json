@@ -49,15 +49,12 @@
     "scripts": {
         "post-install-cmd": [
             "php artisan clear-compiled",
-            "php artisan theme:publish",
-            "php artisan module:publish",
+            "php artisan cms:update",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "php artisan clear-compiled",
-            "php artisan theme:publish",
-            "php artisan module:publish",
-            "php artisan module:publish-config --force",
+            "php artisan cms:update",
             "php artisan optimize"
         ],
         "post-create-project-cmd": [
