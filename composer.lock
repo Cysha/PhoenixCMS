@@ -479,12 +479,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-admin.git",
-                "reference": "9ad782ad526ea0cb524098843c16600259405e01"
+                "reference": "d94ebdedae73f1e7d4bc05be353869b0a59eea8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/9ad782ad526ea0cb524098843c16600259405e01",
-                "reference": "9ad782ad526ea0cb524098843c16600259405e01",
+                "url": "https://api.github.com/repos/Cysha/pxcms-admin/zipball/d94ebdedae73f1e7d4bc05be353869b0a59eea8e",
+                "reference": "d94ebdedae73f1e7d4bc05be353869b0a59eea8e",
                 "shasum": ""
             },
             "require": {
@@ -507,7 +507,7 @@
                 "source": "https://github.com/Cysha/pxcms-admin/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-admin/issues"
             },
-            "time": "2015-06-08 14:55:53"
+            "time": "2015-06-11 13:36:51"
         },
         {
             "name": "cysha/pxcms-adminlte",
@@ -588,12 +588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "c32f4db81969d40c5974d09958adf138b1816382"
+                "reference": "8bfb56ab4f588627ffb76392fca72e94ba1efe0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/c32f4db81969d40c5974d09958adf138b1816382",
-                "reference": "c32f4db81969d40c5974d09958adf138b1816382",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/8bfb56ab4f588627ffb76392fca72e94ba1efe0d",
+                "reference": "8bfb56ab4f588627ffb76392fca72e94ba1efe0d",
                 "shasum": ""
             },
             "require": {
@@ -622,7 +622,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-06-11 11:20:02"
+            "time": "2015-06-11 13:36:07"
         },
         {
             "name": "cysha/pxcms-default",
