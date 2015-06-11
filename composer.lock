@@ -588,12 +588,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cysha/pxcms-core.git",
-                "reference": "8bfb56ab4f588627ffb76392fca72e94ba1efe0d"
+                "reference": "8c211d703afe52fc6a8d01be9026ccf2019ee9a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/8bfb56ab4f588627ffb76392fca72e94ba1efe0d",
-                "reference": "8bfb56ab4f588627ffb76392fca72e94ba1efe0d",
+                "url": "https://api.github.com/repos/Cysha/pxcms-core/zipball/8c211d703afe52fc6a8d01be9026ccf2019ee9a7",
+                "reference": "8c211d703afe52fc6a8d01be9026ccf2019ee9a7",
                 "shasum": ""
             },
             "require": {
@@ -622,7 +622,7 @@
                 "source": "https://github.com/Cysha/pxcms-core/tree/master",
                 "issues": "https://github.com/Cysha/pxcms-core/issues"
             },
-            "time": "2015-06-11 13:36:07"
+            "time": "2015-06-11 14:06:11"
         },
         {
             "name": "cysha/pxcms-default",
