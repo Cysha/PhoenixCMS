@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'vendor' => env('API_VENDOR', ''),
+    'vendor' => 'cysha',
 
     /*
     |--------------------------------------------------------------------------
@@ -25,7 +25,7 @@ return [
     |
     */
 
-    'version' => env('API_VERSION', 'v1'),
+    'version' => 'v1',
 
     /*
     |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ return [
     |
     */
 
-    'prefix' => config('cms.core.paths.api', null),
+    'prefix' => config('cms.core.paths.api', 'api/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -125,6 +125,9 @@ return [
         'basic' => function ($app) {
             return new Dingo\Api\Auth\Provider\Basic($app['auth']);
         },
+        'pxcms' => function ($app) {
+            return new Cms\Modules\Auth\Providers\ApiAuthenticationProvider($app['auth']);
+        }
     ],
 
     /*
