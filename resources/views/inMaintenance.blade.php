@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Phoenix CMS</title>
+        <title>{{ config('cms.core.app.site-name') }} | Maintenance</title>
 
         <link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
