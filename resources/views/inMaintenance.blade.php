@@ -41,7 +41,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">{{ config('cms.core.app.site-name') }}</div>
-                <div class="quote">This site currently in maintenance mode!</div>
+                <div class="quote">This site is currently in maintenance mode!</div>
                 <div class="quote">Be back shortly!</div>
             </div>
         </div>
