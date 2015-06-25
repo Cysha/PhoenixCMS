@@ -67,10 +67,18 @@ class Debug
 
     public static function console($var)
     {
-        if (!class_exists('Debugbar')) {
+        if (!class_exists('Debugbar') || app()->environment() === 'testing') {
             return;
         }
         \Debugbar::addMessage($var);
+    }
+
+    public static function timer($name, $message)
+    {
+        if (!class_exists('Debugbar') || app()->environment() === 'testing') {
+            return;
+        }
+        \Debugbar::{$message === null ? 'stopMeasure' : 'startMeasure'}($name, $message);
     }
 
 }
