@@ -2,22 +2,6 @@
     // add support for csrf header
     jQuery.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
 
-    // init bootstrap, we'll do this after any ajax requests too, so tooltips etc work
-    initBS();
-    $( document ).ajaxSuccess(function( event, request, settings ) {
-        initBS();
-    });
-
-    // close the popovers when you click outside the popover
-    $(':not(#anything)').on('click', function (e) {
-        $('[data-toggle="popover"]').each(function () {
-            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('[data-toggle="popover"]').has(e.target).length === 0) {
-                $(this).popover('hide');
-                return;
-            }
-        });
-    });
-
     /**
      * @code example:
      *
@@ -33,19 +17,46 @@
             }
         });
     };
+
+    // init bootstrap, we'll do this after any ajax requests too, so tooltips etc work
+    initBS();
+    jQuery(document).ajaxSuccess(function(event, request, settings) {
+        initBS();
+    });
+
+    // close the bs3 popovers when you click outside the popover
+    jQuery(':not(#anything)').on('click', function (e) {
+        jQuery('[data-toggle="popover"]').each(function () {
+            if (!jQuery(this).is(e.target) && jQuery(this).has(e.target).length === 0 && jQuery('[data-toggle="popover"]').has(e.target).length === 0) {
+                jQuery(this).popover('hide');
+                return;
+            }
+        });
+    });
 })(window.jQuery);
 
 function initBS(){
     //jQuery('[type="checkbox"]').each(function () { jQuery(this).checkbox(); });
     //jQuery('[type="radio"]').each(function () { jQuery(this).radio(); });
 
-    if( jQuery('[data-toggle="tooltip"]').length ){
+    if (jQuery('[data-toggle="tooltip"]').length) {
         jQuery('[data-toggle="tooltip"]').tooltip();
     }
-    if( jQuery('[data-toggle="popover"]').length ){
-        jQuery('[data-toggle="popover"]').popover({
-            html: true,
-            trigger: 'hover'
+    if (jQuery('[data-toggle="popover"]').length) {
+        jQuery('[data-toggle="popover"]').popover({html: true, trigger: 'hover'});
+    }
+
+    // jquery-ujs handler
+    if (jQuery('[data-method="delete"]').length) {
+        var elements = jQuery('[data-method="delete"]');
+
+        elements.bind('ajax:success', function(e, data, status, xhr){
+            jQuery(e.target).closest('tr').remove();
+
+            // refresh the datatable if its present
+            if (typeof datatable != 'undefined') {
+                datatable.ajax.reload();
+            }
         });
     }
 }
