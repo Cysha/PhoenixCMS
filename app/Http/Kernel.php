@@ -19,6 +19,7 @@ class Kernel extends HttpKernel
         'Cms\Http\Middleware\IsInstalledMiddleware',
         'Cms\Http\Middleware\InMaintenanceMiddleware',
         'Cms\Modules\Core\Http\Middleware\ForceSecureMiddleware',
+        'Cms\Modules\Core\Http\Middleware\CORSMiddleware',
         'Cms\Modules\Core\Http\Middleware\ParseJsToBottomMiddleware',
         'Cms\Modules\Core\Http\Middleware\MinifyHtmlMiddleware',
     ];

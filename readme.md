@@ -1,4 +1,6 @@
 # Phoenix CMS
+[![](http://slack.phoenixcms.org/badge.svg)](http://slack.phoenixcms.org)
+
 [Phoenix CMS](http://phoenixcms.org/) (PXCMS) is a powerful open source, modular content management system.
 
 ## Requirements
