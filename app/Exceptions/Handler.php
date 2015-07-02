@@ -2,6 +2,7 @@
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Theme;
 
 class Handler extends ExceptionHandler
 {
@@ -51,6 +52,14 @@ class Handler extends ExceptionHandler
 
         if ($e instanceof \PDOException) {
             return $this->renderPdoException($e);
+        }
+
+        if (
+            $e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+            || $e instanceof \Symfony\Component\HttpKernel\Exception\ModelNotFoundException
+            || $e instanceof \Symfony\Component\Debug\Exception\FatalErrorException
+        ) {
+            return $this->renderErrorPage($e);
         }
 
         return parent::render($request, $e);
@@ -132,6 +141,23 @@ class Handler extends ExceptionHandler
             $e->getStatusCode(),
             $e->getHeaders()
         );
+    }
+
+    /**
+     * Render an error page.
+     *
+     * @param  \Exception $e
+     * @return \Illuminate\Http\Response
+     */
+    protected function renderErrorPage(Exception $e)
+    {
+        $objTheme = Theme::uses(getCurrentTheme())->layout('1-column');
+
+        $code = $e->getStatusCode();
+
+        return $objTheme
+            ->scope('partials.theme.errors.'.$code, compact('code'))
+            ->render($code);
     }
 
 }
