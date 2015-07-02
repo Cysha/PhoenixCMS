@@ -54,15 +54,8 @@ class Handler extends ExceptionHandler
             return $this->renderPdoException($e);
         }
 
-        if (
-            $e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
-            || $e instanceof \Symfony\Component\HttpKernel\Exception\ModelNotFoundException
-            || $e instanceof \Symfony\Component\Debug\Exception\FatalErrorException
-        ) {
-            return $this->renderErrorPage($e);
-        }
-
-        return parent::render($request, $e);
+        return $this->renderErrorPage($e);
+        //return parent::render($request, $e);
     }
 
     /**
