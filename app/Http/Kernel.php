@@ -12,12 +12,12 @@ class Kernel extends HttpKernel
     protected $middleware = [
         'Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode',
         'Cms\Http\Middleware\IsInstalledMiddleware',
-        'Cms\Http\Middleware\InMaintenanceMiddleware',
         'Cms\Modules\Core\Http\Middleware\ForceSecureMiddleware',
         'Cms\Modules\Core\Http\Middleware\CORSMiddleware',
         'Cms\Http\Middleware\EncryptCookies',
         'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
         'Illuminate\Session\Middleware\StartSession',
+        'Cms\Http\Middleware\InMaintenanceMiddleware',
         'Illuminate\View\Middleware\ShareErrorsFromSession',
         'Cms\Http\Middleware\VerifyCsrfToken',
         'Cms\Modules\Core\Http\Middleware\ParseJsToBottomMiddleware',
