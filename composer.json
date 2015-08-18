@@ -17,11 +17,7 @@
 
         "cysha/pxcms-core"                  : "dev-master",
         "cysha/pxcms-auth"                  : "dev-master",
-        "cysha/pxcms-admin"                 : "dev-master",
-
-        "cysha/pxcms-social"                : "dev-master",
-        "cysha/pxcms-forum"                 : "dev-master",
-        "cysha/pxcms-news"                  : "dev-master"
+        "cysha/pxcms-admin"                 : "dev-master"
 
     },
     "require-dev": {
