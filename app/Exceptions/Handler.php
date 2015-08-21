@@ -64,10 +64,9 @@ class Handler extends ExceptionHandler
      * @param  \PDOException $e
      * @return \Illuminate\Http\Response
      */
-    protected function renderPdoException(PDOException $e)
+    protected function renderPdoException(\PDOException $e)
     {
         if (config('app.debug', false) === true) {
-
             $message = explode(' ', $e->getMessage());
             $dbCode = rtrim($message[1], ']');
             $dbCode = trim($dbCode, '[');
@@ -146,11 +145,16 @@ class Handler extends ExceptionHandler
     {
         $objTheme = Theme::uses(getCurrentTheme())->layout('1-column');
 
-        $code = $e->getStatusCode();
+        $code = method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500;
+
+        if (config('app.debug') === true) {
+            $message = $e->getMessage().':'.$e->getLine();
+        } else {
+            $message = 'Whoops, looks like something went wrong.';
+        }
 
         return $objTheme
-            ->scope('partials.theme.errors.'.$code, compact('code'))
-            ->render($code);
+            ->scope('partials.theme.errors.'.($code === 500 ? 'whoops' : $code), compact('code', 'message'))
+            ->render(($code ?: 500));
     }
-
 }
