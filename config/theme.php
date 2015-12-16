@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
     |--------------------------------------------------------------------------
@@ -59,13 +59,13 @@ return array(
     |
     */
 
-    'containerDir' => array(
+    'containerDir' => [
         'layout'  => 'layouts',
         'asset'   => 'assets',
         'partial' => 'views/partials',
         'widget'  => 'widgets',
-        'view'    => 'views'
-    ),
+        'view'    => 'views',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -76,9 +76,9 @@ return array(
     |
     */
 
-    'namespaces' => array(
-        'widget' => 'App\Widgets'
-    ),
+    'namespaces' => [
+        'widget' => 'App\Widgets',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ return array(
     |
     */
 
-    'events' => array(
+    'events' => [
 
         // Before all event, this event will effect for global.
         'before' => function ($theme) {
@@ -107,9 +107,9 @@ return array(
 
             // To use cook 'backbone' you can fire with 'serve' method.
             // Theme::asset()->serve('backbone');
-        }
+        },
 
-    ),
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -120,13 +120,13 @@ return array(
     |
     */
 
-    'engines' => array(
+    'engines' => [
 
-        'twig' => array(
+        'twig' => [
 
             // This is laravel alias to allow in twig compiler
             // The list all of methods is at /app/config/app.php
-            'allows' => array(
+            'allows' => [
                 'Auth',
                 'Cache',
                 'Config',
@@ -139,9 +139,8 @@ return array(
                 'Str',
                 'Theme',
                 'URL',
-                'Validator'
-            ),
-
+                'Validator',
+            ],
 
             // This is laravel alias to allow in twig compiler
             // The list all of methods is at /app/config/app.php
@@ -156,9 +155,9 @@ return array(
                 $twig->addFunction($function);*/
 
                 return $twig;
-            }
-        )
+            },
+        ],
 
-    )
+    ],
 
-);
+];

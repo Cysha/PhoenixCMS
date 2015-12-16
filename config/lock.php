@@ -1,8 +1,5 @@
 <?php
 
-use BeatSwitch\Lock\Drivers\ArrayDriver;
-use BeatSwitch\Lock\Lock;
-use BeatSwitch\Lock\Manager;
 
 return [
 

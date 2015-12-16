@@ -1,7 +1,8 @@
-<?php namespace Cms\Events;
+<?php
 
-abstract class Event {
+namespace Cms\Events;
 
-	//
-
+abstract class Event
+{
+    //
 }

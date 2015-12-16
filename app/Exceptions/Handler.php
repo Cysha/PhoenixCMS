@@ -1,4 +1,6 @@
-<?php namespace Cms\Exceptions;
+<?php
+
+namespace Cms\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
@@ -13,7 +15,7 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         'Symfony\Component\HttpKernel\Exception\HttpException',
-        'Cms\Modules\Core\Exceptions\NotInstalledException'
+        'Cms\Modules\Core\Exceptions\NotInstalledException',
     ];
 
     /**
@@ -21,7 +23,8 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param  \Exception  $e
+     * @param \Exception $e
+     *
      * @return void
      */
     public function report(Exception $e)
@@ -32,8 +35,9 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
+     * @param \Illuminate\Http\Request $request
+     * @param \Exception               $e
+     *
      * @return \Illuminate\Http\Response
      */
     public function render($request, Exception $e)
@@ -61,7 +65,8 @@ class Handler extends ExceptionHandler
     /**
      * Render a PDOException.
      *
-     * @param  \PDOException $e
+     * @param \PDOException $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderPdoException(\PDOException $e)
@@ -86,7 +91,7 @@ class Handler extends ExceptionHandler
                     $userMessage = 'Untrapped Error:';
                     break;
             }
-            $userMessage = $userMessage . '<br>' . $e->getMessage();
+            $userMessage = $userMessage.'<br>'.$e->getMessage();
         } else {
             // be apologetic but never specific ;)
             $userMessage = 'We are currently experiencing a site wide issue. We are sorry for the inconvenience!';
@@ -98,7 +103,8 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception for notInstalled.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderNotInstalled(Exception $e)
@@ -109,7 +115,8 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception for inMaintenance.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderInMaintenance(Exception $e)
@@ -120,12 +127,13 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception using Whoops.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderExceptionWithWhoops(Exception $e)
     {
-        $whoops = new \Whoops\Run;
+        $whoops = new \Whoops\Run();
         $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
 
         return new \Illuminate\Http\Response(
@@ -138,7 +146,8 @@ class Handler extends ExceptionHandler
     /**
      * Render an error page.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderErrorPage(Exception $e)

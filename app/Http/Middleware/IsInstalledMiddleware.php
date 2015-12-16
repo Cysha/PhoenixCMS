@@ -1,18 +1,21 @@
-<?php namespace Cms\Http\Middleware;
+<?php
+
+namespace Cms\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Schema;
 
 class IsInstalledMiddleware
 {
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure                 $next
+     *
      * @throws \Exception
+     *
+     * @return mixed
      */
     public function handle($request, Closure $next)
     {

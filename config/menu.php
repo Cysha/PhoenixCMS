@@ -1,4 +1,6 @@
-<?php return array(
+<?php
+
+return [
 
   // Global options ------------------------------------------------ /
 
@@ -9,7 +11,7 @@
   // Items --------------------------------------------------------- /
 
   // Various options related to Items
-  'item' => array(
+  'item' => [
 
     // The default Item element
     'element' => 'li',
@@ -17,11 +19,11 @@
     // Various classes to mark active items or children
     'active_class'       => 'active',
     'active_child_class' => 'active-child',
-  ),
+  ],
 
   // ItemLists ----------------------------------------------------- /
 
-  'item_list' => array(
+  'item_list' => [
 
     // The default ItemList element
     'element' => 'ul',
@@ -36,5 +38,5 @@
     // Whether links should inherit their parent/handler's prefix
     'prefix_parents' => false,
     'prefix_handler' => false,
-  ),
-);
+  ],
+];

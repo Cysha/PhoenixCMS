@@ -1,8 +1,9 @@
-<?php namespace Cms\Console;
+<?php
 
-use Illuminate\Contracts\Events\Dispatcher;
-use Illuminate\Contracts\Foundation\Application;
+namespace Cms\Console;
+
 use Illuminate\Console\Scheduling\Schedule;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
@@ -18,7 +19,8 @@ class Kernel extends ConsoleKernel
     /**
      * Define the application's command schedule.
      *
-     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
+     * @param \Illuminate\Console\Scheduling\Schedule $schedule
+     *
      * @return void
      */
     protected function schedule(Schedule $schedule)
@@ -31,7 +33,7 @@ class Kernel extends ConsoleKernel
             if (!$module->enabled()) {
                 return;
             }
-            
+
             $class = sprintf('\Cms\Modules\%s\Console\Kernel', ucwords($module));
             if (!class_exists($class)) {
                 continue;
@@ -39,7 +41,5 @@ class Kernel extends ConsoleKernel
 
             with(new $class($this->app, $this->app['events']))->schedule($schedule);
         }
-
     }
-
 }
