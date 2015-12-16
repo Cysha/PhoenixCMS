@@ -1,19 +1,22 @@
-<?php namespace Cms\Http\Middleware;
+<?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
+namespace Cms\Http\Middleware;
+
 use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class InMaintenanceMiddleware
 {
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure                 $next
+     *
      * @throws \Exception
+     *
+     * @return mixed
      */
     public function handle($request, Closure $next)
     {
@@ -30,9 +33,7 @@ class InMaintenanceMiddleware
                     // if none of those things apply, throw the exception
                     throw new \Cms\Modules\Core\Exceptions\InMaintenanceException('This site is in maintenance.');
                 }
-
             }
-
         }
 
         return $next($request);

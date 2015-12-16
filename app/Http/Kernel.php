@@ -1,4 +1,6 @@
-<?php namespace Cms\Http;
+<?php
+
+namespace Cms\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -30,9 +32,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => 'Cms\Http\Middleware\Authenticate',
+        'auth'       => 'Cms\Http\Middleware\Authenticate',
         'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-        'guest' => 'Cms\Http\Middleware\RedirectIfAuthenticated',
+        'guest'      => 'Cms\Http\Middleware\RedirectIfAuthenticated',
     ];
-
 }

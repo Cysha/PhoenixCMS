@@ -1,7 +1,9 @@
-<?php namespace Cms\Http\Middleware;
+<?php
 
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
+namespace Cms\Http\Middleware;
+
 use Closure;
+use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 
 class VerifyCsrfToken extends BaseVerifier
 {
@@ -16,11 +18,12 @@ class VerifyCsrfToken extends BaseVerifier
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
+     * @param \Illuminate\Http\Request $request
+     * @param \Closure                 $next
      *
      * @throws \Illuminate\Session\TokenMismatchException
+     *
+     * @return mixed
      */
     public function handle($request, Closure $next)
     {
@@ -30,11 +33,10 @@ class VerifyCsrfToken extends BaseVerifier
         }
         $this->except = array_merge($this->except, $config);
 
-
         if ($this->isReading($request) || $this->shouldPassThrough($request) || $this->tokensMatch($request)) {
             return $this->addCookieToResponse($request, $next($request));
         }
 
-        throw new TokenMismatchException;
+        throw new TokenMismatchException();
     }
 }

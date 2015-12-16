@@ -104,11 +104,11 @@ return [
     */
 
     'errorFormat' => [
-        'message' => ':message',
-        'errors' => ':errors',
-        'code' => ':code',
+        'message'     => ':message',
+        'errors'      => ':errors',
+        'code'        => ':code',
         'status_code' => ':status_code',
-        'debug' => ':debug'
+        'debug'       => ':debug',
     ],
 
     /*
@@ -127,7 +127,7 @@ return [
         },
         'pxcms' => function ($app) {
             return new Cms\Modules\Auth\Providers\ApiAuthenticationProvider($app['auth']);
-        }
+        },
     ],
 
     /*
@@ -176,6 +176,6 @@ return [
 
         'json' => 'Dingo\Api\Http\Response\Format\Json',
 
-    ]
+    ],
 
 ];
