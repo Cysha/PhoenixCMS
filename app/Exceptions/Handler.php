@@ -47,7 +47,7 @@ class Handler extends ExceptionHandler
         }
 
         if (config('app.debug') && class_exists('\Whoops\Run')) {
-            return $this->renderExceptionWithWhoops($e);
+            return $this->renderExceptionWithWhoops($e, $request);
         }
 
         if ($e instanceof \PDOException) {
@@ -123,11 +123,15 @@ class Handler extends ExceptionHandler
      * @param  \Exception $e
      * @return \Illuminate\Http\Response
      */
-    protected function renderExceptionWithWhoops(Exception $e)
+    protected function renderExceptionWithWhoops(Exception $e, $request)
     {
         $whoops = new \Whoops\Run;
-        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
-
+        if ($request->ajax()) {
+            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler);
+        } else {
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+        }
+        
         return new \Illuminate\Http\Response(
             $whoops->handleException($e),
             $e->getStatusCode(),
