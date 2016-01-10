@@ -30,6 +30,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
+        'auth' => 'Cms\Modules\Auth\Http\Middleware\AuthMiddleware',
         'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
         'guest' => 'Cms\Http\Middleware\RedirectIfAuthenticated',
     ];
