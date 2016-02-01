@@ -50,6 +50,11 @@ class Handler extends ExceptionHandler
             return $this->renderExceptionWithWhoops($e, $request);
         }
 
+        if ($e instanceof \Illuminate\Session\TokenMismatchException){
+            return redirect()->back()
+                ->withError(trans('core::messages.errors.csrf'));
+        }
+        
         if ($e instanceof \PDOException) {
             return $this->renderPdoException($e);
         }
