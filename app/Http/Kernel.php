@@ -22,6 +22,7 @@ class Kernel extends HttpKernel
         'Cms\Http\Middleware\VerifyCsrfToken',
         'Cms\Modules\Core\Http\Middleware\ParseJsToBottomMiddleware',
         'Cms\Modules\Core\Http\Middleware\MinifyHtmlMiddleware',
+        'Cms\Modules\Auth\Http\Middleware\EnforceUserActionsMiddleware',
     ];
 
     /**
