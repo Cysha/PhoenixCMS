@@ -14,7 +14,47 @@
 * Tokenizer PHP Extension
 
 ## Installation
-.. coming soon ..
+
+*1.*
+Clone this project into a directory
+```bash
+git clone https://github.com/Cysha/PhoenixCMS.git pxcms
+```
+
+*2.*
+Run a composer install from the root of the project:
+```bash
+composer.phar install
+```
+
+*3.*
+Assuming you have NPM installed, run the installer from the root of the project:
+```bash
+npm install
+```
+
+*4.*
+Run the bower installer from the root of the project:
+```bash
+npm install -g bower # run this if you dont have bower installed
+bower install
+```
+
+Providing none of the above threw any errors, that should be all the dependancies installed.
+
+*5.*
+(optional) Next thing to do is configure the environment,
+
+* find your apache vhost that you wish to use,
+* ensure the directory root is path/to/project/**public**
+* and that your parameters in your path/to/project/*.env* file are set are set.
+
+
+*6.*
+Last thing to do then is run the installer from the root of the project, and follow the prompts
+```bash
+php artisan cms:install
+```
 
 ## Versioning
 Releases will be numbered with the follow format: `<major>.<minor>.<patch>` And constructed with the following guidelines:
