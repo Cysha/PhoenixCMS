@@ -56,6 +56,11 @@ Last thing to do then is run the installer from the root of the project, and fol
 php artisan cms:install
 ```
 
+*Note:* If XDebug is enabled you must increase the max_nesting_level in your php.ini like so:
+```
+xdebug.max_nesting_level = 200
+```
+
 ## Versioning
 Releases will be numbered with the follow format: `<major>.<minor>.<patch>` And constructed with the following guidelines:
 - Breaking backwards compatibility bumps the major
