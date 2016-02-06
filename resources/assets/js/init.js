@@ -59,6 +59,16 @@ function initBS(){
             }
         });
     }
+
+    if (jQuery('[data-datatable="refresh"]').length) {
+        var elements = jQuery('[data-datatable="refresh"]');
+
+        elements.bind('ajax:success', function(e, data, status, xhr){
+            if (typeof datatable != 'undefined') {
+                datatable.ajax.reload();
+            }
+        });
+    }
 }
 
 
