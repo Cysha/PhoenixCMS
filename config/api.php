@@ -4,28 +4,48 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | API Vendor
+    | Standards Tree
     |--------------------------------------------------------------------------
     |
-    | Your vendor is used in the "Accept" request header and will be used by
-    | the consumers of your API. Typically this will be the name of your
-    | application or website.
+    | Versioning an API with Dingo revolves around content negotiation and
+    | custom MIME types. A custom type will belong to one of three
+    | standards trees, the Vendor tree (vnd), the Personal tree
+    | (prs), and the Unregistered tree (x).
+    |
+    | By default the Unregistered tree (x) is used, however, should you wish
+    | to you can register your type with the IANA. For more details:
+    | https://tools.ietf.org/html/rfc6838
     |
     */
 
-    'vendor' => 'cysha',
+    'standardsTree' => env('API_STANDARDS_TREE', 'x'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | API Subtype
+    |--------------------------------------------------------------------------
+    |
+    | Your subtype will follow the standards tree you use when used in the
+    | "Accept" header to negotiate the content type and version.
+    |
+    | For example: Accept: application/x.SUBTYPE.v1+json
+    |
+    */
+
+    'subtype' => env('API_SUBTYPE', 'cysha'),
 
     /*
     |--------------------------------------------------------------------------
     | Default API Version
     |--------------------------------------------------------------------------
     |
-    | When a request is made to the API and no version is specified then it
-    | will default to the version specified here.
+    | This is the default version when strict mode is disabled and your API
+    | is accessed via a web browser. It's also used as the default version
+    | when generating your APIs documentation.
     |
     */
 
-    'version' => 'v1',
+    'version' => env('API_VERSION', 'v1'),
 
     /*
     |--------------------------------------------------------------------------
@@ -50,6 +70,19 @@ return [
     */
 
     'domain' => env('API_DOMAIN', null),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Name
+    |--------------------------------------------------------------------------
+    |
+    | When documenting your API using the API Blueprint syntax you can
+    | configure a default name to avoid having to manually specify
+    | one when using the command.
+    |
+    */
+
+    'name' => env('API_NAME', config('cms.core.site-name')),
 
     /*
     |--------------------------------------------------------------------------
@@ -89,7 +122,7 @@ return [
     |
     */
 
-    'debug' => file_exists(storage_path().'/app/debugfile'),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -98,7 +131,7 @@ return [
     |
     | When some HTTP exceptions are not caught and dealt with the API will
     | generate a generic error response in the format provided. Any
-    | keys that aren't replaced with corrosponding values will be
+    | keys that aren't replaced with corresponding values will be
     | removed from the final response.
     |
     */
@@ -108,7 +141,7 @@ return [
         'errors' => ':errors',
         'code' => ':code',
         'status_code' => ':status_code',
-        'debug' => ':debug'
+        'debug' => ':debug',
     ],
 
     /*
@@ -176,6 +209,6 @@ return [
 
         'json' => 'Dingo\Api\Http\Response\Format\Json',
 
-    ]
+    ],
 
 ];
