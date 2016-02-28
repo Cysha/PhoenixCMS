@@ -11,13 +11,13 @@
         "pingpong/modules": "2.1.*@dev",
         "filp/whoops": "~1.0",
 
-        "cysha/pxcms-default": "dev-master",
-        "cysha/pxcms-default-admin": "dev-master",
-        "cysha/pxcms-adminlte": "dev-master",
+        "cysha/theme-default": "dev-master",
+        "cysha/theme-default-admin": "dev-master",
+        "cysha/theme-adminlte": "dev-master",
 
-        "cysha/pxcms-core": "dev-master",
-        "cysha/pxcms-auth": "dev-master",
-        "cysha/pxcms-admin": "dev-master"
+        "cysha/module-core": "dev-master",
+        "cysha/module-auth": "dev-master",
+        "cysha/module-admin": "dev-master"
 
     },
     "require-dev": {
