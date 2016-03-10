@@ -1,7 +1,8 @@
 <?php namespace Cms\Exceptions;
 
-use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Exception;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Auth;
 use Theme;
 
 class Handler extends ExceptionHandler
@@ -159,8 +160,8 @@ class Handler extends ExceptionHandler
     {
         $code = method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500;
 
-        if (config('app.debug') === true) {
-            $message = $e->getMessage().':'.$e->getLine();
+        if (config('app.debug') === true || (Auth::check() && Auth::user()->hasRole('Admin'))) {
+            $message = $e->getMessage();
         } else {
             $message = 'Whoops, looks like something went wrong.';
         }
@@ -170,6 +171,11 @@ class Handler extends ExceptionHandler
                 'message' => $message,
                 'status_code' => (int) $code,
             ];
+
+            if (Auth::check() && Auth::user()->hasRole('Admin')) {
+                $data['file'] = $e->getFile().':'.$e->getLine();
+                $data['data'] = $request->all();
+            }
 
             return response()->json($data, $code);
         } else {
