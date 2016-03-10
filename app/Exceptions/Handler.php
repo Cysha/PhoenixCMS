@@ -1,7 +1,7 @@
 <?php namespace Cms\Exceptions;
 
-use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Exception;
 use Theme;
 
 class Handler extends ExceptionHandler
@@ -46,6 +46,11 @@ class Handler extends ExceptionHandler
             return $this->renderInMaintenance($e);
         }
 
+        if ($e instanceof \Illuminate\Session\TokenMismatchException){
+            return redirect()->back()
+                ->withError(trans('core::messages.errors.csrf'));
+        }
+
         if (config('app.debug') && class_exists('\Whoops\Run')) {
             return $this->renderExceptionWithWhoops($e, $request);
         }
@@ -54,12 +59,12 @@ class Handler extends ExceptionHandler
             return redirect()->back()
                 ->withError(trans('core::messages.errors.csrf'));
         }
-        
+
         if ($e instanceof \PDOException) {
             return $this->renderPdoException($e);
         }
 
-        return $this->renderErrorPage($e);
+        return $this->renderErrorPage($e, $request);
         //return parent::render($request, $e);
     }
 
@@ -136,7 +141,7 @@ class Handler extends ExceptionHandler
         } else {
             $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
         }
-        
+
         return new \Illuminate\Http\Response(
             $whoops->handleException($e),
             $e->getStatusCode(),
@@ -150,10 +155,8 @@ class Handler extends ExceptionHandler
      * @param  \Exception $e
      * @return \Illuminate\Http\Response
      */
-    protected function renderErrorPage(Exception $e)
+    protected function renderErrorPage(Exception $e, $request)
     {
-        $objTheme = Theme::uses(getCurrentTheme())->layout('1-column');
-
         $code = method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500;
 
         if (config('app.debug') === true) {
@@ -162,8 +165,18 @@ class Handler extends ExceptionHandler
             $message = 'Whoops, looks like something went wrong.';
         }
 
-        return $objTheme
-            ->scope('partials.theme.errors.'.($code === 500 ? 'whoops' : $code), compact('code', 'message'))
-            ->render(($code ?: 500));
+        if ($request->ajax()) {
+            $data = [
+                'message' => $message,
+                'status_code' => (int) $code,
+            ];
+
+            return response()->json($data, $code);
+        } else {
+            $objTheme = Theme::uses(getCurrentTheme())->layout('1-column');
+            return $objTheme
+                ->scope('partials.theme.errors.'.($code === 500 ? 'whoops' : $code), compact('code', 'message'))
+                ->render(($code ?: 500));
+        }
     }
 }
