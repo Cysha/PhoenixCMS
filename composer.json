@@ -44,7 +44,7 @@
         ]
     },
     "repositories": [
-        { "type": "composer", "url": "http://packages.phoenixcms.org/" },
+        { "type": "composer", "url": "https://packages.phoenixcms.org/" },
         { "type": "vcs", "url": "https://github.com/cysha/installers" }
     ],
     "scripts": {
