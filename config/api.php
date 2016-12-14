@@ -146,6 +146,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | API Middleware
+    |--------------------------------------------------------------------------
+    |
+    | Middleware that will be applied globally to all API requests.
+    |
+    */
+    'middleware' => [
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Authentication Providers
     |--------------------------------------------------------------------------
     |
@@ -155,12 +166,8 @@ return [
     */
 
     'auth' => [
-        'basic' => function ($app) {
-            return new Dingo\Api\Auth\Provider\Basic($app['auth']);
-        },
-        'pxcms' => function ($app) {
-            return new Cms\Modules\Auth\Providers\ApiAuthenticationProvider($app['auth']);
-        }
+        'basic' => 'Dingo\Api\Auth\Provider\Basic',
+        'pxcms' => 'Cms\Modules\Auth\Providers\ApiAuthenticationProvider',
     ],
 
     /*

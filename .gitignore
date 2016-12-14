@@ -10,3 +10,4 @@ public/modules/*/
 database/migrations/
 !resources/lang/en/
 resources/lang/*
+storage/

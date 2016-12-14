@@ -1,8 +1,16 @@
-<?php namespace Cms\Exceptions;
+<?php
 
+namespace Cms\Exceptions;
+
+use Cms\Modules\Core\Exceptions\NotInstalledException;
 use Exception;
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Auth\AuthenticationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 use Theme;
 
 class Handler extends ExceptionHandler
@@ -13,8 +21,12 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        'Symfony\Component\HttpKernel\Exception\HttpException',
-        'Cms\Modules\Core\Exceptions\NotInstalledException'
+        AuthorizationException::class,
+        HttpException::class,
+        ModelNotFoundException::class,
+        ValidationException::class,
+
+        NotInstalledException::class,
     ];
 
     /**
@@ -22,8 +34,7 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param  \Exception  $e
-     * @return void
+     * @param \Exception $e
      */
     public function report(Exception $e)
     {
@@ -33,8 +44,9 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Exception  $e
+     * @param \Illuminate\Http\Request $request
+     * @param \Exception               $e
+     *
      * @return \Illuminate\Http\Response
      */
     public function render($request, Exception $e)
@@ -47,7 +59,7 @@ class Handler extends ExceptionHandler
             return $this->renderInMaintenance($e);
         }
 
-        if ($e instanceof \Illuminate\Session\TokenMismatchException){
+        if ($e instanceof \Illuminate\Session\TokenMismatchException) {
             return redirect()->back()
                 ->withError(trans('core::messages.errors.csrf'));
         }
@@ -56,7 +68,7 @@ class Handler extends ExceptionHandler
             return $this->renderExceptionWithWhoops($e, $request);
         }
 
-        if ($e instanceof \Illuminate\Session\TokenMismatchException){
+        if ($e instanceof \Illuminate\Session\TokenMismatchException) {
             return redirect()->back()
                 ->withError(trans('core::messages.errors.csrf'));
         }
@@ -72,7 +84,8 @@ class Handler extends ExceptionHandler
     /**
      * Render a PDOException.
      *
-     * @param  \PDOException $e
+     * @param \PDOException $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderPdoException(\PDOException $e)
@@ -97,7 +110,7 @@ class Handler extends ExceptionHandler
                     $userMessage = 'Untrapped Error:';
                     break;
             }
-            $userMessage = $userMessage . '<br>' . $e->getMessage();
+            $userMessage = $userMessage.'<br>'.$e->getMessage();
         } else {
             // be apologetic but never specific ;)
             $userMessage = 'We are currently experiencing a site wide issue. We are sorry for the inconvenience!';
@@ -109,7 +122,8 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception for notInstalled.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderNotInstalled(Exception $e)
@@ -120,7 +134,8 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception for inMaintenance.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderInMaintenance(Exception $e)
@@ -131,16 +146,17 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception using Whoops.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderExceptionWithWhoops(Exception $e, $request)
     {
-        $whoops = new \Whoops\Run;
+        $whoops = new \Whoops\Run();
         if ($request->ajax()) {
-            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler);
+            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
         } else {
-            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
         }
 
         return new \Illuminate\Http\Response(
@@ -153,7 +169,8 @@ class Handler extends ExceptionHandler
     /**
      * Render an error page.
      *
-     * @param  \Exception $e
+     * @param \Exception $e
+     *
      * @return \Illuminate\Http\Response
      */
     protected function renderErrorPage(Exception $e, $request)
@@ -180,9 +197,27 @@ class Handler extends ExceptionHandler
             return response()->json($data, $code);
         } else {
             $objTheme = Theme::uses(getCurrentTheme())->layout('1-column');
+
             return $objTheme
                 ->scope('partials.theme.errors.'.($code === 500 ? 'whoops' : $code), compact('code', 'message'))
                 ->render(($code ?: 500));
         }
+    }
+
+    /**
+     * Convert an authentication exception into an unauthenticated response.
+     *
+     * @param \Illuminate\Http\Request                 $request
+     * @param \Illuminate\Auth\AuthenticationException $exception
+     *
+     * @return \Illuminate\Http\Response
+     */
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        if ($request->expectsJson()) {
+            return response()->json(['error' => 'Unauthenticated.'], 401);
+        }
+
+        return redirect()->guest('login');
     }
 }
