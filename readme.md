@@ -4,8 +4,8 @@
 [Phoenix CMS](http://phoenixcms.org/) (PXCMS) is a powerful open source, modular content management system.
 
 ## Requirements
-* Laravel 5.1 (For L4.2 checkout the [v0.1](https://github.com/Cysha/PhoenixCMS/releases/tag/v0.1) tag)
-* PHP 5.5.9+
+* Laravel 5.3 (For L4.2 checkout the [v0.1](https://github.com/Cysha/PhoenixCMS/releases/tag/v0.1) tag)
+* PHP 5.6.4+
 * MySQL 4+ (no official support for other DBMS at this time)
 * Apache Rewrite Module *`Enabled`*
 * Mcrypt PHP Extension
