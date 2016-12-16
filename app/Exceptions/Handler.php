@@ -2,7 +2,9 @@
 
 namespace Cms\Exceptions;
 
+use Cms\Modules\Pages\Http\Controllers\Frontend\PagesController;
 use Cms\Modules\Core\Exceptions\NotInstalledException;
+use Cms\Modules\Pages\Models\Page;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
@@ -64,13 +66,22 @@ class Handler extends ExceptionHandler
                 ->withError(trans('core::messages.errors.csrf'));
         }
 
+        if ($e instanceof \Symfony\Component\HttpKernel\Exception\HttpException
+                && app('modules')->has('Pages')) {
+            $page = Page::where('slug', $request->path())->first();
+            if ($page) {
+                return app(PagesController::class)->getPage($page);
+            }
+        }
+
         if (config('app.debug') && class_exists('\Whoops\Run')) {
             return $this->renderExceptionWithWhoops($e, $request);
         }
 
-        if ($e instanceof \Illuminate\Session\TokenMismatchException) {
+        if ($e instanceof \Illuminate\Validation\ValidationException) {
             return redirect()->back()
-                ->withError(trans('core::messages.errors.csrf'));
+                ->withInput()
+                ->withError(trans('core::messages.errors.validation'));
         }
 
         if ($e instanceof \PDOException) {
