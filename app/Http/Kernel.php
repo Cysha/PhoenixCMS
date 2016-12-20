@@ -32,7 +32,7 @@ class Kernel extends HttpKernel
             \Cms\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
-            \BeatSwitch\Lock\Integrations\Laravel\Middleware\BootstrapLockPermissions::class,
+            \BeatSwitch\Lock\Integrations\Laravel\Middleware\InitLockAwareTrait::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \Cms\Http\Middleware\VerifyCsrfToken::class,
             \Cms\Modules\Core\Http\Middleware\ParseJsToBottomMiddleware::class,
