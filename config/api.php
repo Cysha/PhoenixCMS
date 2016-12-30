@@ -32,7 +32,7 @@ return [
     |
     */
 
-    'subtype' => env('API_SUBTYPE', 'cysha'),
+    'subtype' => env('API_SUBTYPE', 'pxcms'),
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'name' => env('API_NAME', config('cms.core.site-name')),
+    'name' => env('API_NAME', config('app.name')),
 
     /*
     |--------------------------------------------------------------------------
