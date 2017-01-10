@@ -1,6 +1,16 @@
 language: php
+
 php:
+  - 7.1
+  - 7.0
   - 5.6
-  - 5.5
-  - 5.4
-  - hhvm
+
+before_script:
+  - cp .env.testing .env
+  - touch database/database.sqlite
+  - composer install --no-interaction --no-suggest --no-scripts --prefer-source
+  - php artisan key:generate
+  - php artisan cms:install --no-interaction --env=testing
+
+script:
+  - vendor/bin/phpunit
